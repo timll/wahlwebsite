@@ -1,0 +1,20 @@
+{
+  "name": "wahlwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.html",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm run build:tw && npm run build:css",
+    "build:tw": "tailwind build tailwind.config.css -c tailwind.config.js -o src/css/tailwind.css",
+    "build:css": "postcss tailwind.config.css -o src/css/tailwind.min.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
