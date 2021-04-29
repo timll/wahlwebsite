@@ -1,7 +1,6 @@
-<svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 15V11.5214H19.5223M19.5223 11.5214V4M19.5223 11.5214H33V15" stroke="#5319F8" stroke-width="2.30172" />
-    <path d="M2 40V36.5214H9.8352M9.8352 36.5214V29M9.8352 36.5214H19V40" stroke="#5319F8" stroke-width="2.30172" />
-    <rect x="3.15086" y="16.1509" width="9.69828" height="11.6983" stroke="#5319F8" stroke-width="2.30172" />
-    <rect x="23.1509" y="16.1509" width="11.6983" height="11.6983" stroke="#5319F8" stroke-width="2.30172" />
-    <rect x="13" y="1" width="15" height="2" stroke="#5319F8" stroke-width="2" />
+<svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.00959 21.9468L6.00849 17.8357L12.9219 17.8338M12.9219 17.8338L12.9195 8.94492M12.9219 17.8338L21.0085 17.8316L21.0096 21.9428" stroke="#4100CC" stroke-width="1.5" />
+    <rect x="0.759967" y="22.698" width="9.5" height="6.5" transform="rotate(-0.0153521 0.759967 22.698)" stroke="#4100CC" stroke-width="1.5" />
+    <rect x="15.76" y="22.6941" width="10.5" height="10.5" transform="rotate(-0.0153521 15.76 22.6941)" stroke="#4100CC" stroke-width="1.5" />
+    <rect x="8.75411" y="1.69609" width="9.5" height="6.5" transform="rotate(-0.0153521 8.75411 1.69609)" stroke="#4100CC" stroke-width="1.5" />
 </svg>

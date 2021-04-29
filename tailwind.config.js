@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './src/**/*.html',
@@ -13,9 +15,7 @@ module.exports = {
       yellow: {
         DEFAULT: "#FFF500",
       },
-      grey: {
-        DEFAULT: "#DADADA",
-      }
+      gray: colors.trueGray
     },
     flexGrow: {
       "0": 0,
@@ -34,10 +34,26 @@ module.exports = {
          xl: "1024px",
          "2xl": "1024px",
       }
+    },
+    maxHeight: {
+      "1/2": "50%",
+      "3/4": "75%",
+      "full": "100%"
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+     '3': '3px',
+      '4': '4px',
+     '6': '6px',
+     '8': '8px',
     }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
