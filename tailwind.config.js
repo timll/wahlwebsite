@@ -1,21 +1,37 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [
+  purge: {
+    // enabled: true,
+    content: [
     './src/**/*.html',
     './src/**/*.js',
-  ],
+    ],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
     colors: {
       purple: {
         DEFAULT: "#4100CC",
+        light: "rgba(65, 0, 204, 0.2)"
       },
       yellow: {
         DEFAULT: "#FFF500",
+        normal: "#FCD34D",
+        dark: "#FBBF24"
       },
-      gray: colors.trueGray
+      gray: colors.trueGray,
+      white: colors.white,
+      green: {
+        DEFAULT: "#22C55E",
+        dark: "#16A34A"
+      },
+      red: {
+        DEFAULT: "#EF4444",
+        dark: "#DC2626"
+      },
+      transparent: "rgba(0,0,0,0)"
     },
     flexGrow: {
       "0": 0,

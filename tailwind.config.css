@@ -1,3 +1,15 @@
+
+
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+  @tailwind components;
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -10,15 +22,6 @@
  * @import "tailwindcss/base";
  */
  @tailwind base;
-
- /**
-  * This injects any component classes registered by plugins.
-  *
-  * If using `postcss-import`, use this import instead:
-  *
-  * @import "tailwindcss/components";
-  */
- @tailwind components;
  
  /**
   * Here you would add any of your custom component classes; stuff that you'd
@@ -35,7 +38,6 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
- 
  /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
