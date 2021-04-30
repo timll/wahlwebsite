@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
-    <link href="/src/css/tailwind.min.css" rel="stylesheet">
+    <link href="/css/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-200">
-    <div class="flex flex-col p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 h-screen text-purple">
+    <div
+        class="flex flex-col px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 pt-2 sm:pt-4 md:pt-6 lg:pt-8 xl:pt-10 h-screen text-purple">
         <div
-            class="flex-grow flex flex-col md:flex-row items-stretch bg-yellow border-2 sm:border-3 md:border-4 lg:border-4 border-purple shadow-xl">
+            class="flex-grow flex flex-col md:flex-row items-stretch bg-yellow border-3 sm:border-3 md:border-4 lg:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
             <div
-                class="order-2 md:order-1 flex-1 flex flex-col sm:items-left md:items-left lg:items-left xl:items-left 2xl:items-left justify-between container mx-auto relative p-4 sm:p-8 md:p-16 lg:p-24">
+                class="order-2 flex-1 flex flex-col sm:items-left md:items-left lg:items-left xl:items-left 2xl:items-left justify-between container mx-auto relative p-4 sm:p-8 md:p-16 lg:p-24">
                 <div class="flex flex-row items-center">
                     <img class="h-3 sm:h-4 md:h-6 lg:h-8" src="img/arrow.svg">
                     <p class="text-xl sm:text-2xl md:text-4xl lg:text-6xl underline p-4">TU Darmstadt</p>
@@ -23,44 +24,41 @@
                 <div class="flex-grow flex flex-row space-between items-end">
                     <p class="text-2xl sm:text-4xl md:text-6xl lg:text-8xl mr-10">21.-31.<br>Mai</p>
                     <a href="https://asta.tu-darmstadt.de" target="_blank">
-                        <img class="h-4 sm:h-8 md:h-12 lg:h-16 mb-3" src="img/asta-outline.svg">
+                        <img class="h-4 sm:h-8 md:h-12 lg:h-16 mb-3" src="/img/asta-outline.svg">
                     </a>
                 </div>
-
-                <!-- <div class="absolute bottom-4 left-4">
-                    <a href="https://asta.tu-darmstadt.de" target="_blank">
-                        <img src="img/asta-outline.svg">
-                    </a>
-                </div> -->
             </div>
-            <div class="order-1 md:order-2 flex-1 container mx-auto bg-clip-content bg-center bg-no-repeat bg-contain"
-                style="background-image: url(img/logo.svg);">
+            <div
+                class="order-1 md:order-3 lg:order-3 xl:order-3 flex-1 p-2 sm:p-4 md:p-8 lg:p-10 xl:p-20 container mx-auto">
+                <div class="h-full w-full bg-center bg-no-repeat bg-contain bg-clip-content"
+                    style="background-image: url(img/logo.svg);"></div>
             </div>
         </div>
-        <div class="flex flex-wrap justify-between">
-            <a href="/organigramm.html"
-                class="flex flex-col items-center justify-center square p-4 mt-10 mx-10 bg-gray-50 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 border-4 border-purple shadow-xl">
-                <img class="flex-1 m-2" src="img/organigram.svg">
-                <span class="text-sm md:text-lg lg:text-xl xl:text-2xl">/gremien</span>
-            </a>
-            <a href="/organigramm.html"
-                class="flex flex-col items-center justify-center p-4 mt-10 mx-10 bg-gray-50 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 border-4 border-purple shadow-xl">
-                <img class="flex-1 m-2" src="img/programm.svg">
-                <span class="text-sm md:text-lg lg:text-xl xl:text-2xl">/programme</span>
-            </a>
-            <a href="/organigramm.html"
-                class="flex flex-col items-center justify-center p-4 mt-10 mx-10 bg-gray-50 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 border-4 border-purple shadow-xl">
-                <img class="flex-1 m-2" src="img/studiomat.svg">
-                <span class="text-sm md:text-lg lg:text-xl xl:text-2xl">/wahlomat</span>
-            </a>
-
-            <a href="/organigramm.html"
-                class="flex-grow flex flex-col items-center justify-center p-4 mt-10 mx-10 bg-gray-50 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 border-4 border-purple shadow-xl">
-                <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl">Direkt zum Wahlportal <img
-                        class="ml-1 inline h-2 sm:h-2 md:h-5 lg:h-6 xl:h-10" src="img/arrow.svg"></span>
-            </a>
-        </div>
+        <nav id="navbar" class="flex flex-row justify-center items-center py-2 sm:py-4 md:py-6 lg:py-8 xl:py-10">
+            <div class="w-full flex flex-row flex-wrap justify-around text-purple h-18 md:h-18 lg:h-24 xl:h-36">
+                <a href="/was"
+                    class="order-2 bg-gray-50 h-full full mr-1 sm:mr-2 md:mr-4 lg:mr-6 xl:mr-6 border-3 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img class="h-full p-1" src="/img/was.svg" alt="Was wird gewählt?">
+                </a>
+                <a href="/wer"
+                    class="order-2 h-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-6 bg-gray-50 border-3 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img class="h-full p-1" src="/img/wer.svg" alt="Wer steht zur Wahl?">
+                </a>
+                <a href="/studiomat"
+                    class="order-2 bg-gray-50 h-full ml-1 sm:ml-2 md:ml-4 lg:mx-6 xl:mx-6 border-3 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img class="h-full p-1" src="/img/studi.svg" alt="Studi-o-mat">
+                </a>
+                <a href="#"
+                    class="flex-basis-full order-1 lg:order-3 xl:order-3 lg:flex-basis-auto xl:flex-basis-auto mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 h-full flex-grow flex justify-center p-1 md:p-2 lg:p-4 xl:p-4 lg:mt-0 xl:ml-8 ml-0 lg:ml-6 xl:ml-10 bg-gray-50 border-3 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img style="min-height: 2rem" class="max-h-full pt-2" src="/img/outlink.svg"
+                        alt="Direkt zum Wahlportal">
+                </a>
+            </div>
+        </nav>
     </div>
+
+    <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank"
+        class="underline text-gray-400 text-xs absolute right-0 bottom-0">Impressum</a>
 </body>
 
 </html>

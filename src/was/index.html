@@ -6,39 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
-    <link href="/src/css/tailwind.min.css" rel="stylesheet">
-    <link href="/src/css/organigramm.css" rel="stylesheet">
+    <link href="/css/tailwind.min.css" rel="stylesheet">
+    <link href="/css/organigramm.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-200">
     <div class="p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10">
         <nav id="navbar" class="flex flex-row justify-center items-center px-5 pb-10">
             <div class="mr-2 sm:mr-4 md:mr-8 lg:mr-12 xl:mr-20">
-                <img class="h-32 md:h-40 lg:h-40 xl:h-48 filter drop-shadow-xl" src="../img/logo.svg">
+                <a href="/">
+                    <img class="h-32 md:h-40 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
+                        src="/img/logo.svg">
+                </a>
             </div>
             <div class="w-full flex flex-row flex-wrap justify-around text-purple h-18 md:h-18 lg:h-24 xl:h-36">
-                <a href="#"
-                    class="bg-yellow h-full full mr-1 sm:mr-2 md:mr-4 lg:mr-6 xl:mr-10 border-2 sm:border-3 md:border-4 border-purple shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="../img/was.svg" alt="Was wird gewählt?">
+                <a href="/was"
+                    class="order-2 bg-gray-50 h-full full mr-1 sm:mr-2 md:mr-4 lg:mr-6 xl:mr-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img class="h-full p-1" src="/img/was.svg" alt="Was wird gewählt?">
+                </a>
+                <a href="/wer"
+                    class="order-2 h-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-6 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img class="h-full p-1" src="/img/wer.svg" alt="Wer steht zur Wahl?">
+                </a>
+                <a href="/studiomat"
+                    class="order-2 bg-yellow h-full ml-1 sm:ml-2 md:ml-4 lg:mx-6 xl:mx-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img class="h-full p-1" src="/img/studi.svg" alt="Studi-o-mat">
                 </a>
                 <a href="#"
-                    class="h-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-10 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="../img/wer.svg" alt="Wer steht zur Wahl?">
-                </a>
-                <a href="#"
-                    class="h-full ml-1 sm:ml-2 md:ml-4 lg:mx-6 xl:mx-10 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="../img/studi.svg" alt="Studi-o-mat">
-                </a>
-                <a href="#"
-                    class="flex-basis-full lg:flex-basis-auto xl:flex-basis-auto h-full flex-grow flex justify-center p-4 mt-1 sm:mt-2 md:mt-4 lg:mt-0 ml-0 lg:ml-6 xl:ml-10 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow-xl hover:bg-yellow">
-                    <!-- <svg viewBox="0 0 155 20" class="max-h-full">
-                        <text fill="#4100CC" x="0" y="15">Direkt zum Wahlportal</text>
-                    </svg> -->
-                    <img class="max-h-full pt-2" src="../img/outlink.svg" alt="Studi-o-mat">
+                    class="flex-basis-full lg:flex-basis-auto xl:flex-basis-auto order-1 lg:order-3 xl:order-3 mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 h-full flex-grow flex justify-center p-1 md:p-2 lg:p-4 xl:p-4 lg:mt-0 xl:ml-8 ml-0 lg:ml-6 xl:ml-10 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
+                    <img style="min-height: 2rem" class="max-h-full pt-2" src="/img/outlink.svg"
+                        alt="Direkt zum Wahlportal">
                 </a>
             </div>
         </nav>
-        <main class="bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow-xl py-4">
+        <main
+            class="bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl py-4">
             <div class="container mx-auto px-2 sm:px-4 md:px-8 lg:px-10 xl:px-0">
                 <article class="prose max-w-none">
                     <h1>Was wird gewählt?</h1>
@@ -181,7 +183,8 @@
                         Der Senat überwacht die Geschäftsführung des Präsidiums. Er beschließt die
                         Allgemeinen Prüfungsbestimmungen, die
                         Promotions- und Habilitationsordnung,
-                        die Zusammensetzung von Senatsausschüssen, die Liste der Senatsbeauftragten in Berufungsverfahren im
+                        die Zusammensetzung von Senatsausschüssen, die Liste der Senatsbeauftragten in
+                        Berufungsverfahren im
                         Einvernehmen mit dem Präsidium und
                         das Beratungsangebot für Studierende.
                         Er muss unter anderem Satzungen, der
@@ -207,7 +210,8 @@
                         sowie administrativ-technische
                         Mitarbeiter:innen als stimmberechtigte
                         Mitglieder an. Die Mitglieder des
-                        Präsidiums, die nicht bereits stimmberechtigt sind, sowie der/die Frauenbeauftragte der Hochschule,
+                        Präsidiums, die nicht bereits stimmberechtigt sind, sowie der/die Frauenbeauftragte der
+                        Hochschule,
                         die
                         Vertrauensperson der Schwerbehinderten, der AStA und die Vorsitzenden des
                         Personalrats sowie zwei von der
@@ -220,24 +224,24 @@
                     <h2 id="uv">Universitätsversammlung</h2>
                     <h4>Aufgaben</h4>
                     <p>
-                    Die Universitätsversammlung der TU
-                    Darmstadt behandelt Angelegenheiten,
-                    die für die Universität von grundsätzlicher Bedeutung sind. Sie verabschiedet
-                    die Grundordnung und bezieht Stellung
-                    zu Grundsatzfragen wie der Entwicklung
-                    der Universität, des Lehr- und
-                    Studienbetriebes und des wissenschaftlichen Nachwuchses. Außerdem werden
-                    in ihr die vier Senatsvertreter:innen der
-                    Studierenden gewählt.
+                        Die Universitätsversammlung der TU
+                        Darmstadt behandelt Angelegenheiten,
+                        die für die Universität von grundsätzlicher Bedeutung sind. Sie verabschiedet
+                        die Grundordnung und bezieht Stellung
+                        zu Grundsatzfragen wie der Entwicklung
+                        der Universität, des Lehr- und
+                        Studienbetriebes und des wissenschaftlichen Nachwuchses. Außerdem werden
+                        in ihr die vier Senatsvertreter:innen der
+                        Studierenden gewählt.
                     </p>
                     <h4>Zusammensetzung</h4>
                     <p>
                         Die Universitätsversammlung hat 61
-                    stimmberechtigte Mitglieder: 31
-                    Professor:innen, 15 Studierende, 10
-                    wissenschaftliche Mitarbeiter:innen
-                    sowie 5 administrativ-technische
-                    Mitarbeiter:innen.
+                        stimmberechtigte Mitglieder: 31
+                        Professor:innen, 15 Studierende, 10
+                        wissenschaftliche Mitarbeiter:innen
+                        sowie 5 administrativ-technische
+                        Mitarbeiter:innen.
                     </p>
                 </article>
                 <article class="prose max-w-none mt-8">
@@ -278,7 +282,8 @@
                     <p>
                         Das Studierendenparlament ist das
                         höchste Gremium der Studierendenschaft. Jedes Jahr im Sommer wählen
-                        alle an der TU Darmstadt eingeschriebenen Studierenden 31 Parlamentarier:innen für ein Jahr. Zur Wahl stehen
+                        alle an der TU Darmstadt eingeschriebenen Studierenden 31 Parlamentarier:innen für ein Jahr. Zur
+                        Wahl stehen
                         verschiedene Listen, die dann
                         Vertreter:innen in der auf der Liste
                         angegebenen Reihenfolge entsenden.
@@ -315,14 +320,14 @@
                     </p>
                     <h4>Zusammensetzung seit SoSe 2019</h4>
                     <p>
-                        <ul>
-                            <li>Campusgrüne: 12 Sitze</li>
-                            <li>FACHWERK: 10 Sitze</li>
-                            <li>Jusos und Unabhängige: 3 Sitze</li>
-                            <li>Liberale Hochschulgruppe: 3 Sitze</li>
-                            <li>Linke Liste - SDS: 2 Sitze</li>
-                            <li>DU - Die Unabhängigen: 1 Sitz</li>
-                        </ul>
+                    <ul>
+                        <li>Campusgrüne: 12 Sitze</li>
+                        <li>FACHWERK: 10 Sitze</li>
+                        <li>Jusos und Unabhängige: 3 Sitze</li>
+                        <li>Liberale Hochschulgruppe: 3 Sitze</li>
+                        <li>Linke Liste - SDS: 2 Sitze</li>
+                        <li>DU - Die Unabhängigen: 1 Sitz</li>
+                    </ul>
                     </p>
                 </article>
                 <article class="prose max-w-none mt-8">
@@ -345,7 +350,8 @@
                         Mitglieder im Rahmen ihrer gesetzlichen Befugnis.
                         Die Wahrnehmung der hochschulpolitischen Belange ihrer Mitglieder.
                         Die Wahrnehmung der wirtschaftlichen
-                        und sozialen Belange der Student:innen. Die Zuständigkeit des Studierendenwerks (StuWe) oder anderer
+                        und sozialen Belange der Student:innen. Die Zuständigkeit des Studierendenwerks (StuWe) oder
+                        anderer
                         Träger:innen bleibt unberührt.
                         Die Pflege überregionaler und
                         internationaler Studierendenbeziehungen.
@@ -389,7 +395,7 @@
                         Semesterbeiträge aller Studierenden an
                         der Universität finanziert. Im
                         Sommersemester 2021 beträgt dieser
-                        Beitrag 12,15€. 
+                        Beitrag 12,15€.
                     </p>
                     <h4>Zusammensetzung seit SoSe 2019</h4>
                     <p>
@@ -418,6 +424,9 @@
             </div>
         </main>
     </div>
+
+    <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank"
+        class="underline text-gray-400 text-xs absolute right-0 bottom-0">Impressum</a>
 </body>
 
 </html>
