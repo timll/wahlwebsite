@@ -800,8 +800,7 @@ textarea::placeholder {
   color: #a3a3a3;
 }
 
-button,
-[role="button"] {
+button {
   cursor: pointer;
 }
 
@@ -949,7 +948,7 @@ video {
 
 .bg-yellow {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 245, 0, var(--tw-bg-opacity));
+  background-color: rgba(255, 248, 79, var(--tw-bg-opacity));
 }
 
 .bg-yellow-normal {
@@ -979,7 +978,7 @@ video {
 
 .hover\:bg-yellow:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 245, 0, var(--tw-bg-opacity));
+  background-color: rgba(255, 248, 79, var(--tw-bg-opacity));
 }
 
 .hover\:bg-yellow-dark:hover {
@@ -1096,10 +1095,6 @@ video {
 
 .order-2 {
   order: 2;
-}
-
-.float-right {
-  float: right;
 }
 
 .font-medium {
@@ -1433,12 +1428,12 @@ video {
 
 .text-yellow {
   --tw-text-opacity: 1;
-  color: rgba(255, 245, 0, var(--tw-text-opacity));
+  color: rgba(255, 248, 79, var(--tw-text-opacity));
 }
 
 .hover\:text-yellow:hover {
   --tw-text-opacity: 1;
-  color: rgba(255, 245, 0, var(--tw-text-opacity));
+  color: rgba(255, 248, 79, var(--tw-text-opacity));
 }
 
 .italic {

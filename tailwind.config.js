@@ -19,7 +19,8 @@ module.exports = {
         light: "rgba(65, 0, 204, 0.2)"
       },
       yellow: {
-        DEFAULT: "#FFF500",
+        // DEFAULT: "#FFF500",
+        DEFAULT: "#FFF84F",
         normal: "#FCD34D",
         dark: "#FBBF24"
       },
