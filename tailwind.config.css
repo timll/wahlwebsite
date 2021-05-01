@@ -1,5 +1,13 @@
 
 
+@font-face {
+  font-family: 'Meera Inimai';
+  src: url("/css/meerainimai-regular-webfont.woff2") format("woff2"),
+       url("/css/meerainimai-regular-webfont.woff") format("woff"),
+       url("/css/meerainimai-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
  /**
   * This injects any component classes registered by plugins.

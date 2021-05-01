@@ -1,0 +1,479 @@
+{
+	"theses": {
+		"0": {
+			"l": "In der Mensa soll es größenteils vegetarische und vegane Gerichte geben.",
+			"s": "These 1",
+			"x": "Das Angebot besteht aus mindestens einem veganen und vegetarischen Gericht. Die Mensa soll die Auswahl an vegetarischen und veganen Gerichten vergrößern und dafür weniger Fleischgerichte anbieten."
+		},
+		"1": {
+			"l": "Der AStA soll sich auch zu gesellschaftlichen Themen ohne direkten Bezug zur TU äußern.",
+			"s": "These 2",
+			"x": "Der AStA hat als gewählte Vertretung der verfassten Studierendenschaft ein hochschulpolitisches Mandat. Die Grenzen dessen zum allgemeinpolitischen Mandat sind nicht genau festgelegt. Diese These fragt, ob der AStA das hochschulpolitische Mandat weitgefasst auslegen soll und sich daher auch zu gesellschaftlichen Themen wie beispielsweise Diskriminierung äußern darf."
+		},
+		"2": {
+			"l": "Der AStA soll sich dafür einsetzen, dass die TU eine einheitliche geschlechtergerechte Sprache in der Öffentlichkeitsarbeit sowie in der Lehre durchsetzt.",
+			"s": "These 3",
+			"x": ""
+		},
+		"3": {
+			"l": "Universitäre Gremien, Gremien der verfassten Studierendenschaft und Professuren sollen geschlechterquotiert besetzt sein.",
+			"s": "These 4",
+			"x": ""
+		},
+		"4": {
+			"l": "Der Mindestlohn für HiWis an der TU soll auf 12€ angehoben werden.",
+			"s": "These 5",
+			"x": "Die TU Darmstadt hat einen eigenen Tarifvertrag TV-TU Darmstadt. In diesem soll der Lohn für wissenschaftliche Hilfskräfte von 10€ auf mindestens 12€ angehoben werden."
+		},
+		"5": {
+			"l": "In jedem Gebäude der Universität soll es Unisex-Toiletten geben.",
+			"s": "These 6",
+			"x": ""
+		},
+		"6": {
+			"l": "Der AStA soll Studierendenprojekte wie die Autonomen Tutorien, die Ringvorlesungen und das Lesezeichen-Magazin weiterhin fördern.",
+			"s": "These 7",
+			"x": "Der AStA fördert mehrere Angebote zur politischen Bildung: Autonome Tutorien sind Tutorien, die von Studierenden organisiert werden, zu Themen, die im Lehrplan keinen Platz finden. Ringvorlesungen sind Vorträge zu einem übergeordneten Thema, wobei jeder Termin von einer anderen Dozent:in gehalten wird. Das Lesezeichen ist das Magazin der Studierendenschaft."
+		},
+		"7": {
+			"l": "Der AStA soll kostenfrei Monatshygieneprodukte für alle Studierenden zur Verfügung stellen.",
+			"s": "These 8",
+			"x": ""
+		},
+		"8": {
+			"l": "Prüfungsleistungen sollen unbegrenzt wiederholbar sein.",
+			"s": "These 9",
+			"x": "Für Prüfungsleistungen hat man drei Versuche sowie eine einmalige mündliche Ergänzungsprüfung. Diese Regelung soll ersetzt werden durch eine unbegrenzte Wiederholbarkeit, so wie es schon für Studienleistungen der Fall ist."
+		},
+		"9": {
+			"l": "Veranstaltung sollen auch ohne die Nutzung von Drittanbietern (bspw. Zoom) wahrnehmbar sein.",
+			"s": "These 10",
+			"x": "Als die Pandemie die Universität überrascht hat, wurden schnell Lösungen von amerikanischen Drittanbietern eingekauft. Insbesondere Zoom und Proctorio sind in der Vergangenheit als datenschutzunfreundlich aufgefallen. Der AStA soll sich dafür einsetzen, dass in Zukunft jede Veranstaltung auch ohne die Nutzung von datenschutzunfreundlichen Drittanbietern absolviert werden kann."
+		},
+		"10": {
+			"l": "Die Universität soll keine Werbeflächen für externe Unternehmen anbieten.",
+			"s": "These 11",
+			"x": "Zur Zeit sind zwei Hörsäle von externen Unternehmen gesponsort. Außerdem sind in mehreren Gebäuden Plakatflächen für Unternehmen. Der AStA soll sich für die Abschaffung von Hörsaalsponsorings und Unternehmenswerbung innerhalb der Universität einsetzen."
+		},
+		"11": {
+			"l": "Mandatsträger:innen im StuPa sollen nicht gleichzeitig im AStA Vorstand aktiv sein. ",
+			"s": "These 12",
+			"x": "Das Studierendenparlament ist das höchste Gremium der verfassten Studierendenschaft. Es beruft den AStA Vorstand, welcher als eine Art Exekutive fungiert. Für eine strikte Trennung soll in der Satzung festgehalten werden, dass eine Person im AStA Vorstand nicht gleichzeitig stimmberechtigt im Studierendenparlament seien darf."
+		},
+		"12": {
+			"l": "Der AStA soll, sobald wieder Präsenzveranstaltungen die Regel sind, auf eine Erweiterung des Semesterticktgebietes (bspw. LK Aschaffenburg und nördliches BaWü) hinwirken.",
+			"s": "These 13",
+			"x": ""
+		},
+		"13": {
+			"l": "Der AStA soll sich aktiv gegen jegliche Form von gruppenbezogener Menschenfeindlichkeit (Rassismus, Antisemitismus, Sexismus, Homo-/Inter*-/Trans*-Feindlichkeit etc.) stellen.",
+			"s": "These 14",
+			"x": ""
+		},
+		"14": {
+			"l": "Studierenden mit sozialen oder gesundheitlicher Beeinträchtigung, welche sich in Außnahmesituationen befinden, sollten im Sinne der Gleichberechtigung eine angepasste Prüfungssituation eingeräumt bekommen.",
+			"s": "These 15",
+			"x": "Die Pandemie hat zahlreiche Studierende vor Probleme gestellt. Beispielsweise Personen, die zuhause ein Familienmitglied pflegen, sollten plötzlich mit hunderten Anderen eine Präsenzklausur schreiben. In solchen Fällen sollte der Nachteilsausgleich genutzt werden und auch diesen Studierenden die Möglichkeit geboten werden, die Prüfung abzulegen."
+		}
+	},
+	"lists": {
+		"0": {
+			"name": "Campusgrüne",
+			"name_x": "Campusgrüne"
+		},
+		"1": {
+			"name": "FACHWERK",
+			"name_x": "FACHWERK"
+		},
+		"2": {
+			"name": "Jusos",
+			"name_x": "Jusos"
+		},
+		"3": {
+			"name": "Liberale Hochschulgruppe",
+			"name_x": "LHG"
+		},
+		"4": {
+			"name": "Ring",
+			"name_x": "RCDS"
+		},
+		"5": {
+			"name": "Linke Liste - SDS",
+			"name_x": "SDS"
+		}
+	},
+	"answers": {
+		"0": {
+			"0": {
+				"selection": 0,
+				"statement": "Juche!"
+			},
+			"1": {
+				"selection": 0,
+				"statement": "Noe."
+			},
+			"2": {
+				"selection": 2,
+				"statement": ""
+			},
+			"3": {
+				"selection": 1,
+				"statement": ""
+			},
+			"4": {
+				"selection": 0,
+				"statement": ""
+			},
+			"5": {
+				"selection": 2,
+				"statement": ""
+			},
+			"6": {
+				"selection": 1,
+				"statement": ""
+			},
+			"7": {
+				"selection": 1,
+				"statement": ""
+			},
+			"8": {
+				"selection": 0,
+				"statement": ""
+			},
+			"9": {
+				"selection": 0,
+				"statement": ""
+			},
+			"10": {
+				"selection": 0,
+				"statement": ""
+			},
+			"11": {
+				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		},
+		"1": {
+			"0": {
+				"selection": 2,
+				"statement": "Moep"
+			},
+			"1": {
+				"selection": 1,
+				"statement": "Yay"
+			},
+			"2": {
+				"selection": 0,
+				"statement": ""
+			},
+			"3": {
+				"selection": 0,
+				"statement": ""
+			},
+			"4": {
+				"selection": 0,
+				"statement": ""
+			},
+			"5": {
+				"selection": 1,
+				"statement": ""
+			},
+			"6": {
+				"selection": 0,
+				"statement": ""
+			},
+			"7": {
+				"selection": 2,
+				"statement": ""
+			},
+			"8": {
+				"selection": 2,
+				"statement": ""
+			},
+			"9": {
+				"selection": 0,
+				"statement": ""
+			},
+			"10": {
+				"selection": 0,
+				"statement": ""
+			},
+			"11": {
+				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		},
+		"2": {
+			"0": {
+				"selection": 0,
+				"statement": ""
+			},
+			"1": {
+				"selection": 2,
+				"statement": ""
+			},
+			"2": {
+				"selection": 2,
+				"statement": ""
+			},
+			"3": {
+				"selection": 0,
+				"statement": ""
+			},
+			"4": {
+				"selection": 3,
+				"statement": ""
+			},
+			"5": {
+				"selection": 2,
+				"statement": ""
+			},
+			"6": {
+				"selection": 2,
+				"statement": ""
+			},
+			"7": {
+				"selection": 0,
+				"statement": ""
+			},
+			"8": {
+				"selection": 0,
+				"statement": ""
+			},
+			"9": {
+				"selection": 0,
+				"statement": ""
+			},
+			"10": {
+				"selection": 0,
+				"statement": ""
+			},
+			"11": {
+				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		},
+		"3": {
+			"0": {
+				"selection": 2,
+				"statement": ""
+			},
+			"1": {
+				"selection": 0,
+				"statement": ""
+			},
+			"2": {
+				"selection": 0,
+				"statement": ""
+			},
+			"3": {
+				"selection": 0,
+				"statement": ""
+			},
+			"4": {
+				"selection": 0,
+				"statement": ""
+			},
+			"5": {
+				"selection": 2,
+				"statement": ""
+			},
+			"6": {
+				"selection": 0,
+				"statement": ""
+			},
+			"7": {
+				"selection": 2,
+				"statement": ""
+			},
+			"8": {
+				"selection": 1,
+				"statement": ""
+			},
+			"9": {
+				"selection": 2,
+				"statement": ""
+			},
+			"10": {
+				"selection": 0,
+				"statement": ""
+			},
+			"11": {
+				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		},
+		"4": {
+			"0": {
+				"selection": 0,
+				"statement": ""
+			},
+			"1": {
+				"selection": 2,
+				"statement": ""
+			},
+			"2": {
+				"selection": 2,
+				"statement": ""
+			},
+			"3": {
+				"selection": 2,
+				"statement": ""
+			},
+			"4": {
+				"selection": 2,
+				"statement": ""
+			},
+			"5": {
+				"selection": 2,
+				"statement": ""
+			},
+			"6": {
+				"selection": 2,
+				"statement": ""
+			},
+			"7": {
+				"selection": 0,
+				"statement": ""
+			},
+			"8": {
+				"selection": 0,
+				"statement": ""
+			},
+			"9": {
+				"selection": 0,
+				"statement": ""
+			},
+			"10": {
+				"selection": 0,
+				"statement": ""
+			},
+			"11": {
+				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		},
+		"5": {
+			"0": {
+				"selection": 0,
+				"statement": ""
+			},
+			"1": {
+				"selection": 0,
+				"statement": ""
+			},
+			"2": {
+				"selection": 2,
+				"statement": ""
+			},
+			"3": {
+				"selection": 1,
+				"statement": ""
+			},
+			"4": {
+				"selection": 2,
+				"statement": ""
+			},
+			"5": {
+				"selection": 2,
+				"statement": ""
+			},
+			"6": {
+				"selection": 2,
+				"statement": ""
+			},
+			"7": {
+				"selection": 2,
+				"statement": ""
+			},
+			"8": {
+				"selection": 0,
+				"statement": ""
+			},
+			"9": {
+				"selection": 0,
+				"statement": ""
+			},
+			"10": {
+				"selection": 0,
+				"statement": ""
+			},
+			"11": {
+				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		}
+	}
+}

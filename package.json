@@ -13,6 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "prod": "NODE_ENV=production npm run build",
     "build": "npm run build:tw && npm run build:css",
     "build:tw": "tailwind build tailwind.config.css -c tailwind.config.js -o src/css/tailwind.css",
     "build:css": "postcss tailwind.config.css -o src/css/tailwind.min.css"

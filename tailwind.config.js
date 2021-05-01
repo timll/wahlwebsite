@@ -12,6 +12,8 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
+      gray: colors.trueGray,
+      white: colors.white,
       purple: {
         DEFAULT: "#4100CC",
         light: "rgba(65, 0, 204, 0.2)"
@@ -21,8 +23,6 @@ module.exports = {
         normal: "#FCD34D",
         dark: "#FBBF24"
       },
-      gray: colors.trueGray,
-      white: colors.white,
       green: {
         DEFAULT: "#22C55E",
         dark: "#16A34A"
@@ -50,6 +50,9 @@ module.exports = {
          xl: "1024px",
          "2xl": "1024px",
       }
+    },
+    minHeight: {
+      "8": "8rem"
     },
     maxHeight: {
       "1/2": "50%",

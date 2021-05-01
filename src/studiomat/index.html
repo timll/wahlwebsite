@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
     <link href="/css/tailwind.min.css" rel="stylesheet">
+    <script defer src="/js/studiomat.js"></script>
+
+    <style>
+        html {
+            overflow-y: scroll;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-200">
@@ -49,144 +54,141 @@
                         <br>
                         Für die Stellungnahmen zu den Thesen sind die Gruppen selbst verantwortlich.
                     </p>
-                    <p class="text-center">
-                        <button
-                            class="bg-purple text-white px-4 py-2  font-semibold tracking-wider text-white rounded hover:text-yellow">Studi-o-Mat
+                    <p id="start" class="flex justify-center">
+                        <noscript class="bg-red text-white p-2 m-2">Javascript muss aktiviert sein, damit der Studi-o-Mat funktioniert.</noscript>
+                        <svg id="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="#4100cc" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="#4100cc" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                        <button id="btn-start"
+                            class="hidden bg-purple text-white px-4 py-2 font-semibold tracking-wider text-white rounded hover:text-yellow">Studi-o-Mat
                             starten!</button>
+                        <p id="error-msg" class="hidden bg-red text-white p-2 m-2">Fehler: Konnte die Antworten nicht laden. Versuche die Seite neuzuladen. Sollte es dann immer noch nicht gehen, kontaktiere bitte oeffentlichkeit@asta.tu-darmstadt.de.</p>
                     </p>
+
+                    <div id="studiomat" class="prose mx-auto hidden">
+                        <div id="pagination" class="flex h-8 font-medium text-gray-700">
+                            <div
+                                class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
+                                1</div>
+                            <div
+                                class="w-full  flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-purple">
+                                2</div>
+                            <div
+                                class="w-full  flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
+                                3</div>
+                            <div
+                                class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
+                                13</div>
+                            <div
+                                class="w-full  flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
+                                14</div>
+                            <div
+                                class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
+                                15</div>
+                        </div>
+    
+                        <div class="relative pt-1">
+                            <div class="overflow-hidden h-2 mb-4 text-xs flex bg-purple bg-purple-light">
+                                <div id="progress-bar"
+                                    class="w-none shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple opacity-light">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h2 id="thesis-number">
+                                
+                            </h2>
+                            <p id="thesis-text">Deine These hier</p>
+                            <p id="thesis-more" class="text-xs italic">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                                kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+    
+                        <div class="flex justify-center mb-4">      
+                            <button id="btn-important"
+                                class="mx-2 bg-purple text-white text-xs px-4 py-2 tracking-wider text-white rounded">Doppelt
+                                gewichten</button>
+                        </div>
+                        <div class="flex flex-row flex-wrap justify-center">
+                            <button id="btn-yes"
+                                class="m-2 bg-green hover:bg-green-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Zustimmung</button>
+                            <button id="btn-neutral"
+                                class="m-2 bg-yellow-normal hover:bg-yellow-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Neutral</button>
+                            <button id="btn-no"
+                                class="m-2 bg-red hover:bg-red-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Ablehnung</button>
+                            <button id="btn-skip"
+                                class="m-2 bg-gray-400 hover:bg-gray-500 px-4 py-2 font-semibold tracking-wider text-white rounded">Überspringen
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div id="results" class="hidden prose mx-auto">
+                        <h2>Ergebnisse</h2>
+                        <h4>Zusammenfassung</h4>
+                        <div id="result-summary" class="flex flex-col">
+                            <div class="flex flex-row items-center justify-center my-1">
+                                <div class="mr-2">Jusos</div>
+                                <div class="w-full overflow-hidden h-8 text-sm flex bg-purple bg-purple-light relative">
+                                    <span class="absolute top-0 left-2 text-white leading-8">
+                                        13/37 Punkten
+                                    </span>
+                                    <div style="width:30%"
+                                        class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple opacity-light">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <h4>Thesen</h4>
+                        <div id="result-details">
+                            <details class="bg-gray-200 rounded p-2">
+                                <summary class="cursor-pointer">
+                                    <span>
+                                        These 
+                                    </span>
+                                    <span class="text-xs">These1</span>
+                                    <div class="flex flex-row flex-wrap">
+                                        <span class="bg-red rounded p-1 text-white text-sm m-1">Deine Wahl</span>
+                                        <span class="m-1">|</span>
+                                        <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
+                                        <span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
+                                        <span class="bg-red rounded p-1 text-white text-sm m-1">Jusos</span>
+                                        <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
+                                        <span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
+                                        <span class="bg-red rounded p-1 text-white text-sm m-1">Jusos</span>
+                                    </div>
+                                </summary>
+                                <div class="flex flex-col pt-4 pl-4">
+                                    <span class="py-2">
+                                        <span class="bg-red rounded p-1 text-white m-1">Jusos</span>
+                                        LOREM IPSMU
+                                    </span>
+                                    <span class="py-2">
+                                        <span class="bg-red rounded p-1 text-white m-1">Jusos</span>
+                                        LOREM IPSMU
+                                    </span>
+                                    <span class="py-2">
+                                        <span class="bg-red rounded p-1 text-white m-1">Jusos</span>
+                                        LOREM IPSMU
+                                    </span>
+                                </div>
+                            </details>    
+                        </div>
+                    </div>    
+
                     <h2>FAQ</h2>
-                    <h3>Wer steht hinter dem Studi-o-Mat</h3>
+                    <h3>Wer steht hinter dem Studi-o-Mat?</h3>
                 </article>
-
-                <div id="mahlowat" class="prose mx-auto">
-                    <div class="flex h-8 font-medium text-gray-700">
-                        <div
-                            class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
-                            1</div>
-                        <div
-                            class="w-full  flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-purple">
-                            2</div>
-                        <div
-                            class="w-full  flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
-                            3</div>
-                        <div
-                            class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
-                            13</div>
-                        <div
-                            class="w-full  flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
-                            14</div>
-                        <div
-                            class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
-                            15</div>
-                    </div>
-
-                    <div class="relative pt-1">
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex bg-purple bg-purple-light">
-                            <div style="width:30%"
-                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple opacity-light">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <h2>
-                            These 1
-                        </h2>
-                        <p>Deine These hier</p>
-                        <p class="text-xs italic">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    </div>
-
-                    <div class="flex justify-center mb-4">
-                        <button
-                            class="mx-2 bg-purple text-white text-xs px-4 py-2 tracking-wider text-white rounded">Doppelt
-                            gewichten</button>
-                    </div>
-                    <div class="flex flex-row flex-wrap justify-center">
-                        <button
-                            class="m-2 bg-green hover:bg-green-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Zustimmung</button>
-                        <button
-                            class="m-2 bg-yellow-normal hover:bg-yellow-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Neutral</button>
-                        <button
-                            class="m-2 bg-red hover:bg-red-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Ablehnung</button>
-                        <button
-                            class="m-2 bg-gray-400 hover:bg-gray-500 px-4 py-2 font-semibold tracking-wider text-white rounded">Überspringen
-                        </button>
-                    </div>
-                </div>
-
-                <div class="prose mx-auto">
-                    <h2>Ergebnisse</h2>
-                    <h4>Zusammenfassung</h4>
-                    <div class="flex flex-col">
-                        <div class="flex flex-row items-center justify-center my-1">
-                            <div class="mr-2">Jusos</div>
-                            <div class="w-full overflow-hidden h-8 text-sm flex bg-purple bg-purple-light relative">
-                                <span class="absolute top-0 left-2 text-white leading-8">
-                                    13/37 Punkten
-                                </span>
-                                <div style="width:30%"
-                                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple opacity-light">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row items-center justify-center my-1">
-                            <div class="mr-2">JusCos</div>
-                            <div class="w-full overflow-hidden h-8 text-sm flex bg-purple bg-purple-light relative">
-                                <span class="absolute top-0 left-2 text-white leading-8">
-                                    13/37 Punkten
-                                </span>
-                                <div style="width:30%"
-                                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple opacity-light">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4>Thesen</h4>
-                    <details class="bg-gray-200 rounded p-2">
-                        <summary class="cursor-pointer pb-4">
-                            <span>
-                                These 1
-                            </span>
-                            <span class="text-xs">These1</span>
-                            <div class="flex flex-row flex-wrap">
-                                <span class="bg-red rounded p-1 text-white text-sm m-1">Deine Wahl</span>
-                                <span class="m-1">|</span>
-                                <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
-                                <span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
-                                <span class="bg-red rounded p-1 text-white text-sm m-1">Jusos</span>
-                                <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
-                                <span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
-                                <span class="bg-red rounded p-1 text-white text-sm m-1">Jusos</span>
-                            </div>
-                        </summary>
-                        <div class="flex flex-col pl-4">
-                            <span class="py-2">
-                                <span class="bg-red rounded p-1 text-white m-1">Jusos</span>
-                                LOREM IPSMU
-                            </span>
-                            <span class="py-2">
-                                <span class="bg-red rounded p-1 text-white m-1">Jusos</span>
-                                LOREM IPSMU
-                            </span>
-                            <span class="py-2">
-                                <span class="bg-red rounded p-1 text-white m-1">Jusos</span>
-                                LOREM IPSMU
-                            </span>
-                        </div>
-                    </details>
-                </div>
             </div>
         </main>
     </div>
 
     <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank"
-        class="underline text-gray-400 text-xs absolute right-0 bottom-0">Impressum</a>
+        class="underline text-gray-400 text-xs fixed right-0 bottom-0">Impressum</a>
 </body>
-
 </html>
