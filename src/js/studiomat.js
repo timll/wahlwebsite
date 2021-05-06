@@ -229,15 +229,15 @@ function addResultSummary(list, pointsForList, maxAchievablePoints) {
 }
 
 function addResultDetail(thesis_id) {
-    if (answers[thesis_id][0] == answer.skip || answers[thesis_id][0] == answer.empty)
-        return;
+    // if (answers[thesis_id][0] == answer.skip || answers[thesis_id][0] == answer.empty)
+    //     return;
 
     let html = `<details class="bg-gray-200 rounded p-2 my-4">
                     <summary class="cursor-pointer">
                         <span>`+ data.theses[thesis_id].s +`</span>
                         <span class="text-xs">`+ data.theses[thesis_id].l +`</span>
                         <div class="flex flex-row flex-wrap">`
-    html += getSelectionMarker(answers[thesis_id][1] ? "Deine Wahl" : "Deine Wahl x2", answers[thesis_id][0]) + '</span><span class="m-1">|</span>'
+    html += getSelectionMarker(answers[thesis_id][1] ? "Deine Wahl x2" : "Deine Wahl", answers[thesis_id][0]) + '</span><span class="m-1">|</span>'
     for (list_id in data.lists)
         html += getSelectionMarker(data.lists[list_id].name_x, data.answers[list_id][thesis_id].selection)
     html +=         `</summary>
