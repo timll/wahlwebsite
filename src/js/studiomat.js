@@ -73,24 +73,28 @@ function toggleImportant() {
 
 function doYes() {
     answers[currentThesis] = [answer.yes, isImportant];
+    document.querySelector("#btn-yes").blur();
     recreatePagination();
 	nextThesisAfterSelection();
 }
 
 function doNeutral() {
     answers[currentThesis] = [answer.neutral, isImportant];
+    document.querySelector("#btn-neutral").blur();
     recreatePagination();
 	nextThesisAfterSelection();
 }
 
 function doNo() {
     answers[currentThesis] = [answer.no, isImportant];
+    document.querySelector("#btn-no").blur();
     recreatePagination();
 	nextThesisAfterSelection();
 }
 
 function doSkip() {
     answers[currentThesis] = [answer.skip, isImportant];
+    document.querySelector("#btn-skip").blur();
     recreatePagination();
 	nextThesisAfterSelection();
 }
@@ -233,7 +237,7 @@ function addResultDetail(thesis_id) {
                         <span>`+ data.theses[thesis_id].s +`</span>
                         <span class="text-xs">`+ data.theses[thesis_id].l +`</span>
                         <div class="flex flex-row flex-wrap">`
-    html += getSelectionMarker("Deine Wahl", answers[thesis_id][0]) + '</span><span class="m-1">|</span>'
+    html += getSelectionMarker(answers[thesis_id][1] ? "Deine Wahl" : "Deine Wahl x2", answers[thesis_id][0]) + '</span><span class="m-1">|</span>'
     for (list_id in data.lists)
         html += getSelectionMarker(data.lists[list_id].name_x, data.answers[list_id][thesis_id].selection)
     html +=         `</summary>

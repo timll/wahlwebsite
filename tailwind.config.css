@@ -1,13 +1,44 @@
 
+  @font-face {
+    font-family: 'Meera Inimai';
+    src: local("Meera Inimai"),
+        /* url("/fonts/meerainimai-regular-webfont.woff2") format("woff2"), */
+        url("/fonts/meerainimai-regular-webfont.woff") format("woff"),
+        url("/fonts/meerainimai-regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
 
 @font-face {
-  font-family: 'Meera Inimai';
-  src: url("/css/meerainimai-regular-webfont.woff2") format("woff2"),
-       url("/css/meerainimai-regular-webfont.woff") format("woff"),
-       url("/css/meerainimai-regular.ttf") format("ttf");
-  font-weight: normal;
+  font-family: 'Amiri Regular';
   font-style: normal;
-}
+  font-weight: normal;
+  src: local('Amiri Regular'), url('/fonts/Amiri-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Amiri Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Amiri Italic'), url('/fonts/Amiri-Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Amiri Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Amiri Bold'), url('/fonts/Amiri-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Amiri Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Amiri Bold Italic'), url('/fonts/Amiri-BoldItalic.woff') format('woff');
+  }
 
  /**
   * This injects any component classes registered by plugins.
@@ -80,4 +111,39 @@
         flex-basis: auto;
       }
     }
+  }
+
+  p {
+    @apply font-serif;
+  }
+
+  .nav-square {
+    @apply h-20 sm:h-24 md:h-24 lg:h-28 xl:h-28 mx-2 sm:mx-2 md:mx-4 lg:mx-4 xl:mx-4 mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover;
+  }
+  .nav-square > img {
+    @apply h-full p-1;
+  }
+
+  .nav-filler {
+    @apply flex-basis-full lg:flex-basis-auto xl:flex-basis-auto mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 h-full flex-grow flex justify-center h-20 sm:h-20 md:h-20 lg:h-28 xl:h-28 p-1 md:p-2 lg:p-4 xl:p-4 lg:mt-0 xl:ml-8 ml-0 lg:ml-6 xl:ml-8 bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover;
+  }
+  .nav-filler > img {
+    @apply min-h-2 lg:min-h-0 xl:min-h-0 max-w-full px-4 lg:px-0 xl:px-0 pt-2;
+  }
+
+  .resp-pad {
+    @apply p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8;
+  }
+  .resp-pad-x {
+    @apply px-6 sm:px-6 md:px-8 lg:px-8 xl:px-8;
+  }
+  .resp-pad-y {
+    @apply py-6 sm:py-6 md:py-8 lg:py-8 xl:py-8;
+  }
+  .resp-pad-t {
+    @apply pt-6 sm:pt-6 md:pt-8 lg:pt-8 xl:pt-8;
+  }
+  
+  .resp-mar-b {
+    @apply mb-6 sm:mb-6 md:mb-8 lg:mb-8 xl:mb-8;
   }

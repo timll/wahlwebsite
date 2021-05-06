@@ -12,14 +12,18 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      gray: colors.trueGray,
+      gray: {
+        "200": "#F3F3F3", 
+        "400": colors.trueGray["400"],
+        "500": colors.trueGray["500"]
+      },
       white: colors.white,
       purple: {
-        DEFAULT: "#4100CC",
-        light: "rgba(65, 0, 204, 0.2)"
+        DEFAULT: "#2E0091",
+        light: "rgba(65, 0, 204, 0.2)",
+        hover: "#EDEDFF"
       },
       yellow: {
-        // DEFAULT: "#FFF500",
         DEFAULT: "#FFF84F",
         normal: "#FCD34D",
         dark: "#FBBF24"
@@ -45,6 +49,7 @@ module.exports = {
     },
     fontFamily: {
       "sans": ["Meera Inimai", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      "serif": ["Amiri Regular", "ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"]
     },    
     container: {
       screens: {
@@ -53,9 +58,25 @@ module.exports = {
       }
     },
     minHeight: {
-      "8": "8rem"
+      "1": "1rem",
+      "2": "2rem",
+      "3": "3rem",
+      "4": "4rem",
+      "8": "8rem",
+      '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      'full': '100%'
     },
     maxHeight: {
+      "8": "8rem",
+      "16": "16rem",
+      "1/2": "50%",
+      "3/4": "75%",
+      "full": "100%"
+    },
+    maxWidth: {
       "1/2": "50%",
       "3/4": "75%",
       "full": "100%"

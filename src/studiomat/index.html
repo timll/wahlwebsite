@@ -6,47 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.min.css" rel="stylesheet">
     <script defer src="/js/studiomat.js"></script>
+    <link rel="preload" href="/fonts/meerainimai-regular-webfont.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/Amiri-Regular.woff" as="font" crossorigin="anonymous" />
 
-    <style>
-        html {
-            overflow-y: scroll;
-        }
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e0091">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body class="bg-gray-200">
-    <div class="p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10">
-        <nav id="navbar" class="flex flex-row justify-center items-center px-5 pb-10">
-            <div class="mr-2 sm:mr-4 md:mr-8 lg:mr-12 xl:mr-20">
+<body class="bg-gray-200 overflow-y-scroll">
+    <div class="container mx-auto resp-pad">
+        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad">
+            <div class="mb-4 mr-2 sm:mr-4 md:mr-8 lg:mr-8 xl:mr-8">
                 <a href="/">
-                    <img class="h-32 md:h-40 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
+                    <img class="h-28 md:h-32 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
                         src="/img/logo.svg">
                 </a>
             </div>
-            <div class="w-full flex flex-row flex-wrap justify-around text-purple h-18 md:h-18 lg:h-24 xl:h-36">
-                <a href="/was"
-                    class="order-2 bg-gray-50 h-full full mr-1 sm:mr-2 md:mr-4 lg:mr-6 xl:mr-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="/img/was.svg" alt="Was wird gewählt?">
+            <div class="w-full flex flex-row flex-wrap justify-around text-purple">
+                <a href="/was" class="bg-white nav-square">
+                    <img src="/img/was.svg" alt="Was wird gewählt?">
                 </a>
-                <a href="/wer"
-                    class="order-2 h-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-6 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="/img/wer.svg" alt="Wer steht zur Wahl?">
+                <a href="/wer" class="bg-white nav-square">
+                    <img src="/img/wer.svg" alt="Wer steht zur Wahl?">
                 </a>
-                <a href="/studiomat"
-                    class="order-2 bg-yellow h-full ml-1 sm:ml-2 md:ml-4 lg:mx-6 xl:mx-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="/img/studi.svg" alt="Studi-o-mat">
+                <a href="/studiomat" class="bg-purple-hover nav-square">
+                    <img src="/img/studi.svg" alt="Studi-o-mat">
                 </a>
-                <a href="#"
-                    class="flex-basis-full lg:flex-basis-auto xl:flex-basis-auto order-1 lg:order-3 xl:order-3 mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 h-full flex-grow flex justify-center p-1 md:p-2 lg:p-4 xl:p-4 lg:mt-0 xl:ml-8 ml-0 lg:ml-6 xl:ml-10 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img style="min-height: 2rem" class="max-h-full pt-2" src="/img/outlink.svg"
-                        alt="Direkt zum Wahlportal">
+                <a href="#" class="nav-filler">
+                    <img src="/img/outlink.svg" alt="Direkt zum Wahlportal">
                 </a>
             </div>
         </nav>
-        <main
-            class="bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl py-4">
-            <div class="container mx-auto px-2 sm:px-4 md:px-8 lg:px-10 xl:px-0">
-                <article class="prose max-w-none">
+        <main class="bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
+            <div class="container mx-auto resp-pad">
+                <article class="prose mx-auto">
                     <h1>Studi-o-Mat</h1>
                     <p>
                         Mit dem Studi-o-Mat möchten wir dir ermöglichen deine Meinung zu ausgewählten Thesen mit denen
@@ -54,17 +52,24 @@
                         <br>
                         Für die Stellungnahmen zu den Thesen sind die Gruppen selbst verantwortlich.
                     </p>
-                    <p id="start" class="flex justify-center">
-                        <noscript class="bg-red text-white p-2 m-2">Javascript muss aktiviert sein, damit der Studi-o-Mat funktioniert.</noscript>
-                        <svg id="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="#4100cc" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="#4100cc" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                          </svg>
+                    <div id="start" class="flex justify-center">
+                        <noscript class="bg-red text-white p-2 m-2">Javascript muss aktiviert sein, damit der
+                            Studi-o-Mat funktioniert.</noscript>
+                        <svg id="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white mx-auto"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="#4100cc" stroke-width="4">
+                            </circle>
+                            <path class="opacity-75" fill="#4100cc"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                            </path>
+                        </svg>
                         <button id="btn-start"
                             class="hidden bg-purple text-white px-4 py-2 font-semibold tracking-wider text-white rounded hover:text-yellow">Studi-o-Mat
                             starten!</button>
-                        <p id="error-msg" class="hidden bg-red text-white p-2 m-2">Fehler: Konnte die Antworten nicht laden. Versuche die Seite neuzuladen. Sollte es dann immer noch nicht gehen, kontaktiere bitte oeffentlichkeit@asta.tu-darmstadt.de.</p>
-                    </p>
+                        <p id="error-msg" class="hidden bg-red text-white p-2 m-2 text-sans">Fehler: Konnte die
+                            Antworten nicht laden. Versuche die Seite neuzuladen. Sollte es dann immer noch nicht gehen,
+                            kontaktiere bitte oeffentlichkeit@asta.tu-darmstadt.de.</p>
+                    </div>
 
                     <div id="studiomat" class="prose mx-auto hidden">
                         <div id="pagination" class="flex h-8 font-medium text-gray-700">
@@ -87,7 +92,7 @@
                                 class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
                                 15</div>
                         </div>
-    
+
                         <div class="relative pt-1">
                             <div class="overflow-hidden h-2 mb-4 text-xs flex bg-purple bg-purple-light">
                                 <div id="progress-bar"
@@ -97,19 +102,23 @@
                         </div>
                         <div class="mb-4">
                             <h2 id="thesis-number">
-                                
+
                             </h2>
                             <p id="thesis-text">Deine These hier</p>
-                            <p id="thesis-more" class="text-xs italic">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                            <p id="thesis-more" class="text-xs italic">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At
                                 vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
                                 takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam
+                                erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                clita
                                 kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                         </div>
-    
-                        <div class="flex justify-center mb-4">      
+
+                        <div class="flex justify-center mb-4">
                             <button id="btn-important"
                                 class="mx-2 bg-purple text-white text-xs px-4 py-2 tracking-wider text-white rounded">Doppelt
                                 gewichten</button>
@@ -122,11 +131,11 @@
                             <button id="btn-no"
                                 class="m-2 bg-red hover:bg-red-dark text-white px-4 py-2  font-semibold tracking-wider text-white rounded">Ablehnung</button>
                             <button id="btn-skip"
-                                class="m-2 bg-gray-400 hover:bg-gray-500 px-4 py-2 font-semibold tracking-wider text-white rounded">Überspringen
+                                class="m-2 bg-gray-400 hover:bg-500 px-4 py-2 font-semibold tracking-wider text-white rounded">Überspringen
                             </button>
                         </div>
                     </div>
-    
+
                     <div id="results" class="hidden prose mx-auto">
                         <h2>Ergebnisse</h2>
                         <h4>Zusammenfassung</h4>
@@ -143,23 +152,25 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <h4>Thesen</h4>
                         <div id="result-details">
                             <details class="bg-gray-200 rounded p-2">
                                 <summary class="cursor-pointer">
                                     <span>
-                                        These 
+                                        These
                                     </span>
                                     <span class="text-xs">These1</span>
                                     <div class="flex flex-row flex-wrap">
                                         <span class="bg-red rounded p-1 text-white text-sm m-1">Deine Wahl</span>
                                         <span class="m-1">|</span>
                                         <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
-                                        <span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
+                                        <span
+                                            class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
                                         <span class="bg-red rounded p-1 text-white text-sm m-1">Jusos</span>
                                         <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
-                                        <span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
+                                        <span
+                                            class="bg-yellow-normal rounded p-1 text-white text-sm m-1">FACHWERK</span>
                                         <span class="bg-red rounded p-1 text-white text-sm m-1">Jusos</span>
                                     </div>
                                 </summary>
@@ -177,9 +188,9 @@
                                         LOREM IPSMU
                                     </span>
                                 </div>
-                            </details>    
+                            </details>
                         </div>
-                    </div>    
+                    </div>
 
                     <h2>FAQ</h2>
                     <h3>Wer steht hinter dem Studi-o-Mat?</h3>
@@ -191,4 +202,5 @@
     <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank"
         class="underline text-gray-400 text-xs fixed right-0 bottom-0">Impressum</a>
 </body>
+
 </html>

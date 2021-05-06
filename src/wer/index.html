@@ -5,41 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/meerainimai-regular-webfont.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/Amiri-Regular.woff" as="font" crossorigin="anonymous" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e0091">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="bg-gray-200">
-    <div class="p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10">
-        <nav id="navbar" class="flex flex-row justify-center items-center px-5 pb-10">
-            <div class="mr-2 sm:mr-4 md:mr-8 lg:mr-12 xl:mr-20">
+    <div class="container mx-auto p-2 sm:p-4 md:p-6 lg:p-8 xl:p-8">
+        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad">
+            <div class="mb-4 mr-2 sm:mr-4 md:mr-8 lg:mr-8 xl:mr-8">
                 <a href="/">
-                    <img class="h-32 md:h-40 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
+                    <img class="h-28 md:h-32 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
                         src="/img/logo.svg">
                 </a>
             </div>
-            <div class="w-full flex flex-row flex-wrap justify-around text-purple h-18 md:h-18 lg:h-24 xl:h-36">
-                <a href="/was"
-                    class="order-2 bg-gray-50 h-full full mr-1 sm:mr-2 md:mr-4 lg:mr-6 xl:mr-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="/img/was.svg" alt="Was wird gewählt?">
+            <div class="w-full flex flex-row flex-wrap justify-around text-purple">
+                <a href="/was" class="bg-white nav-square">
+                    <img src="/img/was.svg" alt="Was wird gewählt?">
                 </a>
-                <a href="/wer"
-                    class="order-2 bg-yellow h-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="/img/wer.svg" alt="Wer steht zur Wahl?">
+                <a href="/wer" class="bg-purple-hover nav-square">
+                    <img src="/img/wer.svg" alt="Wer steht zur Wahl?">
                 </a>
-                <a href="/studiomat"
-                    class="order-2 bg-gray-50 h-full ml-1 sm:ml-2 md:ml-4 lg:mx-6 xl:mx-6 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img class="h-full p-1" src="/img/studi.svg" alt="Studi-o-mat">
+                <a href="/studiomat" class="bg-white nav-square">
+                    <img src="/img/studi.svg" alt="Studi-o-mat">
                 </a>
-                <a href="#"
-                    class="flex-basis-full lg:flex-basis-auto xl:flex-basis-auto order-1 lg:order-3 xl:order-3 mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 h-full flex-grow flex justify-center p-1 md:p-2 lg:p-4 xl:p-4 lg:mt-0 xl:ml-8 ml-0 lg:ml-6 xl:ml-10 bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-yellow">
-                    <img style="min-height: 2rem" class="max-h-full pt-2" src="/img/outlink.svg"
-                        alt="Direkt zum Wahlportal">
+                <a href="#" class="nav-filler">
+                    <img src="/img/outlink.svg" alt="Direkt zum Wahlportal">
                 </a>
             </div>
         </nav>
-        <main
-            class="bg-gray-50 border-2 sm:border-3 md:border-4 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl py-4">
-            <div class="container mx-auto px-2 sm:px-4 md:px-8 lg:px-10 xl:px-0">
-                <article class="prose max-w-none">
+        <main class="bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
+            <div class="container mx-auto resp-pad">
+                <article class="prose mx-auto">
                     <h1>Wer steht zur Wahl?</h1>
                     <p>
                         Im Folgenden stellen sich alle studentischen Listen, die zur Wahl stehen, vor. Für die Inhalte
@@ -47,16 +51,19 @@
                     </p>
                 </article>
 
-                <div class="py-2 px-2 sm:px-4 md:px-8 lg:px-10 xl:px-20 flex flex-wrap justify-around items-center">
-                        <a class="w-40 h-40 flex items-center justify-center border-2 border-purple m-1 sm:mx-2 md:mx-2 lg:m-4 xl:m-8 shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl" href="/wer/cg.html">
-                            <img class="p-2" src="/img/lists/cg.jpg">
-                        </a>
-                        <a class="w-40 h-40 flex items-center justify-center border-2 border-purple m-1 sm:mx-2 md:mx-2 lg:m-4 xl:m-8 shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl" href="/wer/fachwerk.html">
-                            <img class="p-2" src="/img/lists/fachwerk.png">
-                        </a>
-                        <a class="w-40 h-40 flex items-center justify-center border-2 border-purple m-1 sm:mx-2 md:mx-2 lg:m-4 xl:m-8 shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl" href="/wer/jusos.html">
-                            <img class="p-2" src="/img/lists/jusos.png">
-                        </a>
+                <div class="py-2 resp-pad flex flex-wrap justify-around items-center">
+                    <a class="w-40 h-40 flex items-center justify-center border-2 border-purple m-4 sm:mx-4 md:mx-4 lg:m-8 xl:m-8 shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl"
+                        href="/wer/cg.html">
+                        <img class="p-2" src="/img/lists/cg.jpg">
+                    </a>
+                    <a class="w-40 h-40 flex items-center justify-center border-2 border-purple m-4 sm:mx-4 md:mx-4 lg:m-8 xl:m-8 shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl"
+                        href="/wer/fachwerk.html">
+                        <img class="p-2" src="/img/lists/fachwerk.png">
+                    </a>
+                    <a class="w-40 h-40 flex items-center justify-center border-2 border-purple m-4 sm:mx-4 md:mx-4 lg:m-8 xl:m-8 shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl"
+                        href="/wer/jusos.html">
+                        <img class="p-2" src="/img/lists/jusos.png">
+                    </a>
                 </div>
             </div>
         </main>
@@ -65,4 +72,5 @@
     <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank"
         class="underline text-gray-400 text-xs fixed right-0 bottom-0">Impressum</a>
 </body>
+
 </html>
