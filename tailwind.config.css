@@ -7,13 +7,15 @@
         url("/fonts/meerainimai-regular.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
 
-@font-face {
-  font-family: 'Amiri Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Amiri Regular'), url('/fonts/Amiri-Regular.woff') format('woff');
+  @font-face {
+    font-family: 'Amiri Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Amiri Regular'), url('/fonts/Amiri-Regular.woff') format('woff');
+    font-display: swap;
   }
   
 
