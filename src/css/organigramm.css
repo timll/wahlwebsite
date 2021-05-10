@@ -33,7 +33,6 @@ ol {
 }
 
 details {
-
   overflow: hidden;
 }
 details > summary {
@@ -46,6 +45,7 @@ details > p {
   text-align: left;
   color: #374151;
   word-wrap: break-word;
+  padding: 0.1rem;
 }
 
 figure h1,
@@ -185,6 +185,18 @@ figure h2 {
   /* background: var(--level-3); */
 }
 
+.level-3::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%);
+  width: 22px;
+  height: 2px;
+  background: var(--black);
+}
+
 
 /* LEVEL-4 STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -227,7 +239,7 @@ figure h2 {
 
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .rectangle {
     padding: 20px 10px;
   }
@@ -260,10 +272,92 @@ figure h2 {
   .level-2-wrapper::before {
     left: -20px;
     width: 2px;
-    height: calc(100% + 15px);
+    height: calc(100% + 20px);
   }
 
   .level-2-wrapper > li:not(:first-child) {
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .rectangle {
+    padding: 15px 5px;
+  }
+
+  .level-1,
+  .level-2,
+  .level-3 {
+    width: 100%;
+  }
+
+  .level-1,
+  .level-2 {
+    margin-bottom: 20px;
+  }
+
+  .level-1::before,
+  .level-2-wrapper > li::before,
+  .level-2::before,
+  .level-3-wrapper > li::before {
+    display: none;
+  }
+
+  .level-2-wrapper,
+  .level-2-wrapper::after,
+  .level-2::after {
+    display: block;
+  }
+
+  .level-2-wrapper {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .level-2-wrapper::before {
+    left: -20px;
+    width: 2px;
+    height: calc(100% + 20px);
+  }
+
+  .level-2-wrapper > li:not(:first-child) {
+    margin-top: 50px;
+  }
+
+  .level-3-wrapper,
+  .level-3-wrapper::after,
+  .level-3::after {
+    display: block;
+  }
+
+  .level-3-wrapper {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .level-3-wrapper::before {
+    left: -20px;
+    width: 2px;
+    height: calc(100% + 20px);
+  }
+
+  .level-3-wrapper > li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 2px;
+    background: var(--black);
+  }
+
+  .level-3-wrapper > li:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .level-4-wrapper {
+    width: 90%;
+    margin-left: 10%;
   }
 }
