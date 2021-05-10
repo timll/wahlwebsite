@@ -2,8 +2,6 @@
 <html lang="de">
 
 <head>
-    <title>Hochschulwahlen 2020</title>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.min.css" rel="stylesheet">
@@ -20,71 +18,64 @@
 </head>
 
 <body class="bg-gray-200">
-    <div class="container mx-auto flex flex-col resp-pad-x resp-pad-y text-purple">
+    <div class="container max-h-screen mx-auto flex flex-col resp-pad">
         <div
             class="flex flex-col lg:flex-row bg-yellow border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
-            <div class="lg:w-1/2 flex flex-col items-center justify-around resp-pad">
-                <h2 class="text-5xl lg:text-6xl xl:text-6xl underline">TU Darmstadt</h2>
+            <div
+                class="lg:w-2/5 xl:w-2/5 flex flex-col items-center justify-around resp-pad lg:border-r-2 xl:border-r-2 border-purple text-purple">
+                <h4 class="text-2xl lg:text-3xl xl:text-3xl">TU Darmstadt</h4>
 
-                <img class="max-w-full max-h-16 my-4" src="/img/logo.svg" alt="Logo">
+                <img class="max-w-full max-h-16 my-6" src="/img/logo.svg">
 
-                <h3 class="text-6xl lg:text-7xl xl:text-7xl mt-4">21.-31. Mai</h3>
+                <h4 class="text-6xl lg:text-7xl xl:text-7xl mt-4">21.-31. Mai</h4>
             </div>
-            <div class="lg:w-1/2 flex flex-col items-center relative resp-pad bg-white">
-                <div class="prose">
+            <div class="lg:w-3/5 xl:w-3/5 flex flex-col items-center relative resp-pad bg-white">
+                <div class="prose prose-lg">
+                    <span class="text-2xl">Liebe Kommiliton:in,</span>
                     <p>
-
-                        <span class="font-serif text-xl">Liebe Kommiliton:in,</span><br>
-                        nachdem die Pandemie letztes Jahr so ziemlich alles auf den Kopf gestellt hat, ist es jetzt
+                        Nachdem die Pandemie letztes Jahr so ziemlich alles auf den Kopf gestellt hat, ist es jetzt
                         wieder soweit:
                         es sind Hochschulwahlen an der TU Darmstadt.
-                    </p>
-                    <p>
+                        <br>
                         Auch wenn es auf den ersten Blick nicht unbedingt sichtbar ist: Hochschulpolitik hat einen
                         großen Einfluss auf dein Studium.
                         Gewählte Vertreter:innen stimmen über Prüfungsbestimmungen, Mensapreise und Wohnheimsmieten ab,
                         filtern Bewerbungen von Professor:innen, kämpfen für bessere Studienbedingungen und noch viel
                         mehr.
-
+                        <br>
                         Mit deiner Stimme hast du die Möglichkeit den Kurs der studentischen Positionen in den nächsten
-                        2 Semestern mitzubestimmen.
-                    </p>
-                    <p>
+                        zwei Semestern mitzubestimmen.
+                        <br>
                         Damit du auch top informiert bist, haben wir auf dieser Webseite alles gesammelt. Du kannst dich
                         über die zur Wahl stehenden Gremien informieren, findest Vorstellungen aller studentischen
                         Listen und kannst deine eigenen Positionen in unserem Studi-o-mat mit denen der Listen
                         abgleichen.
                     </p>
-                    <p class="text-lg">
+                    <span class="text-xl">
                         Dein AStA der TU Darmstadt &#x1F9E1;
-                    </p>
+                    </span>
                 </div>
             </div>
         </div>
-        <nav id="navbar" class="flex flex-row justify-center items-center resp-pad-t">
-            <div class="w-full flex flex-row flex-wrap justify-around text-purple h-24 sm:h-24 md:h-24 lg:h-24 xl:h-28">
-                <a href="/was"
-                    class="resp-mar-b bg-white h-full full mr-2 sm:mr-2 md:mr-4 lg:mr-6 xl:mr-6 border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover">
-                    <img class="h-full p-1" src="/img/was.svg" alt="Was wird gewählt?">
+        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad-t">
+            <div class="w-full flex flex-row flex-wrap justify-between">
+                <a href="/was" class="nav-square nav-m-r">
+                    <img src="/img/was.svg" alt="Was wird gewählt?">
                 </a>
-                <a href="/wer"
-                    class="resp-mar-b h-full mx-2 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-6 bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover">
-                    <img class="h-full p-1" src="/img/wer.svg" alt="Wer steht zur Wahl?">
+                <a href="/wer" class="nav-square nav-m-x">
+                    <img src="/img/wer.svg" alt="Wer steht zur Wahl?">
                 </a>
-                <a href="/studiomat"
-                    class="resp-mar-b bg-white h-full ml-2 sm:ml-2 md:ml-4 lg:mx-6 xl:mx-6 border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover">
-                    <img class="h-full p-1" src="/img/studi.svg" alt="Studi-o-mat">
+                <a href="/studiomat" class="nav-square nav-m-l">
+                    <img src="/img/studi.svg" alt="Studi-o-mat">
                 </a>
-                <a href="#"
-                    class="resp-mar-b flex-basis-full lg:flex-basis-auto xl:flex-basis-auto h-full flex-grow flex justify-center p-2 md:p-2 lg:p-4 xl:p-4 lg:mt-0 xl:ml-8 ml-0 lg:ml-6 xl:ml-10 bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover">
-                    <img style="min-height: 2rem" class="max-h-full pt-2" src="/img/outlink.svg"
-                        alt="Direkt zum Wahlportal">
+                <a href="#" class="nav-filler">
+                    <img src="/img/outlink.svg" alt="Direkt zum Wahlportal">
                 </a>
             </div>
         </nav>
     </div>
     <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank" rel="noreferrer"
-        class="underline text-gray-400 text-xs fixed right-0 bottom-0">Impressum</a>
+        class="imprint">Impressum</a>
 </body>
 
 </html>

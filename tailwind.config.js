@@ -4,8 +4,8 @@ module.exports = {
   purge: {
     // enabled: true,
     content: [
-    './src/**/*.html',
-    './src/**/*.js',
+      './src/**/*.html',
+      './src/**/*.js',
     ],
   },
   darkMode: false, // or 'media' or 'class'
@@ -13,7 +13,7 @@ module.exports = {
     extend: {},
     colors: {
       gray: {
-        "200": "#F3F3F3", 
+        "200": "#F3F3F3",
         "400": colors.trueGray["400"],
         "500": colors.trueGray["500"]
       },
@@ -25,8 +25,8 @@ module.exports = {
       },
       yellow: {
         DEFAULT: "#FFF84F",
-        normal: "#FCD34D",
-        dark: "#FBBF24"
+        normal: "#FBBF24",
+        dark: "#F59E0B"
       },
       green: {
         DEFAULT: "#22C55E",
@@ -50,11 +50,11 @@ module.exports = {
     fontFamily: {
       "sans": ["Meera Inimai", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
       "serif": ["Amiri Regular", "ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"]
-    },    
+    },
     container: {
       screens: {
-         xl: "1024px",
-         "2xl": "1024px",
+        xl: "1024px",
+        "2xl": "1024px",
       }
     },
     minHeight: {
@@ -85,10 +85,10 @@ module.exports = {
       DEFAULT: '1px',
       '0': '0',
       '2': '2px',
-     '3': '3px',
+      '3': '3px',
       '4': '4px',
-     '6': '6px',
-     '8': '8px',
+      '6': '6px',
+      '8': '8px',
     }
   },
   variants: {
@@ -96,5 +96,24 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '640px',
+          },
+          '@screen md': {
+            maxWidth: '768px',
+          },
+          '@screen lg': {
+            maxWidth: '1280px',
+          },
+          '@screen xl': {
+            maxWidth: '1400px',
+          },
+        }
+      })
+    },
   ],
 }

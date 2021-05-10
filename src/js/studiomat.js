@@ -288,17 +288,17 @@ function initResults() {
 
 function statementOrDefault(statement) {
     if (statement == "")
-        return '<span class="italic text-sm">Keine Stellungnahme.</span>';
+        return '<span class="italic text-sm">Die Liste hat keine Stellungnahme abgegeben.</span>';
     return '<span class="text-sm">'+statement+'</span>';
 }
 
 function getSelectionMarker(list, selection) {
     if (selection == answer.yes)
-        return '<span class="bg-green rounded p-1 text-white text-sm m-1">'+ list +'</span>';
+        return '<span class="bg-green rounded p-1 text-white leading-inherit text-sm m-1">'+ list +'</span>';
     else if (selection == answer.neutral)
-        return '<span class="bg-yellow-normal rounded p-1 text-white text-sm m-1">'+ list +'</span>';
+        return '<span class="bg-yellow-normal rounded p-1 text-white leading-inherit text-sm m-1">'+ list +'</span>';
     else if (selection == answer.no)
-        return '<span class="bg-red rounded p-1 text-white text-sm m-1">'+ list +'</span>';
+        return '<span class="bg-red rounded p-1 text-white leading-inherit text-sm m-1">'+ list +'</span>';
 
-    return '<span class="bg-gray-400 rounded p-1 text-white text-sm m-1">'+ list +'</span>';
+    return '<span class="bg-gray-400 rounded p-1 text-white leading-inherit text-sm m-1">'+ list +'</span>';
 }

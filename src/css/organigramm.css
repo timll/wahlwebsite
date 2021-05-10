@@ -29,7 +29,7 @@ ol {
   padding: 20px;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); */
   text-align: center;
-  border: 2px solid #2E0091;
+  border: 3px solid #2E0091;
 }
 
 details {
@@ -39,18 +39,18 @@ details {
 details > summary {
   text-align: center;
   cursor:pointer;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #2E0091;
 }
 details > p {
   text-align: left;
-  color: black;
+  color: #374151;
   word-wrap: break-word;
 }
 
 figure h1,
 figure h2 {
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #2E0091;
 }
 
@@ -68,7 +68,7 @@ figure h2 {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 1px;
+  width: 2px;
   height: 23px;
   background: var(--black);
 }
@@ -88,10 +88,10 @@ figure h2 {
   top: -20px;
   left: 25%;
   width: 50%;
-  height: 1px;
+  height: 2px;
   background: var(--black);
 }
-/* 
+/*
 .level-2-wrapper::after {
   display: none;
   content: "";
@@ -99,7 +99,7 @@ figure h2 {
   left: -20px;
   bottom: -20px;
   width: calc(100% + 20px);
-  height: 1px;
+  height: 2px;
   background: var(--black);
 } */
 
@@ -113,7 +113,7 @@ figure h2 {
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 1px;
+  width: 2px;
   height: 20px;
   background: var(--black);
 }
@@ -130,7 +130,7 @@ figure h2 {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 1px;
+  width: 2px;
   height: 23px;
   background: var(--black);
 }
@@ -142,8 +142,8 @@ figure h2 {
   top: 50%;
   left: 0%;
   transform: translate(-100%, -50%);
-  width: 21px;
-  height: 1px;
+  width: 22px;
+  height: 2px;
   background: var(--black);
 }
 
@@ -165,7 +165,7 @@ figure h2 {
   top: -20px;
   left: calc(25% - 5px);
   width: calc(50% + 10px);
-  height: 1px;
+  height: 2px;
   background: var(--black);
 }
 
@@ -175,7 +175,7 @@ figure h2 {
   top: 0;
   left: 50%;
   transform: translate(-50%, -100%);
-  width: 1px;
+  width: 2px;
   height: 20px;
   background: var(--black);
 }
@@ -199,7 +199,7 @@ figure h2 {
   position: absolute;
   top: -20px;
   left: -20px;
-  width: 1px;
+  width: 2px;
   height: calc(100% + 20px);
   background: var(--black);
 }
@@ -219,8 +219,8 @@ figure h2 {
   top: 50%;
   left: 0%;
   transform: translate(-100%, -50%);
-  width: 21px;
-  height: 1px;
+  width: 22px;
+  height: 2px;
   background: var(--black);
 }
 
@@ -245,7 +245,7 @@ figure h2 {
   .level-2-wrapper > li::before {
     display: none;
   }
-  
+
   .level-2-wrapper,
   .level-2-wrapper::after,
   .level-2::after {
@@ -259,8 +259,8 @@ figure h2 {
 
   .level-2-wrapper::before {
     left: -20px;
-    width: 1px;
-    height: calc(50% + 38px);
+    width: 2px;
+    height: calc(100% + 15px);
   }
 
   .level-2-wrapper > li:not(:first-child) {

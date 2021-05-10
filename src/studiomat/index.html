@@ -2,8 +2,6 @@
 <html lang="de">
 
 <head>
-    <title>Studi-o-Mat</title>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.min.css" rel="stylesheet">
@@ -22,21 +20,21 @@
 
 <body class="bg-gray-200 overflow-y-scroll">
     <div class="container mx-auto resp-pad">
-        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad">
+        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad-b resp-pad-x">
             <div class="mb-4 mr-2 sm:mr-4 md:mr-8 lg:mr-8 xl:mr-8">
                 <a href="/">
-                    <img class="h-28 md:h-32 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
+                    <img class="logo"
                         src="/img/logo.svg">
                 </a>
             </div>
-            <div class="w-full flex flex-row flex-wrap justify-around text-purple">
-                <a href="/was" class="bg-white nav-square">
+            <div class="w-full flex flex-row flex-wrap justify-around">
+                <a href="/was" class="nav-square nav-m-r">
                     <img src="/img/was.svg" alt="Was wird gewählt?">
                 </a>
-                <a href="/wer" class="bg-white nav-square">
+                <a href="/wer" class="nav-square nav-m-x">
                     <img src="/img/wer.svg" alt="Wer steht zur Wahl?">
                 </a>
-                <a href="/studiomat" class="bg-purple-hover nav-square">
+                <a href="/studiomat" class="nav-square nav-m-l bg-selected">
                     <img src="/img/studi.svg" alt="Studi-o-mat">
                 </a>
                 <a href="#" class="nav-filler">
@@ -44,15 +42,18 @@
                 </a>
             </div>
         </nav>
-        <main class="bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
+        <main
+            class="bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
             <div class="container mx-auto resp-pad">
-                <article class="prose mx-auto">
+                <article class="prose prose-lg mx-auto">
                     <h1>Studi-o-Mat</h1>
                     <p>
                         Mit dem Studi-o-Mat möchten wir dir ermöglichen deine Meinung zu ausgewählten Thesen mit denen
                         der Listen, welche für das Studierendenparlament kandidieren.
                         <br>
                         Für die Stellungnahmen zu den Thesen sind die Gruppen selbst verantwortlich.
+                        <br>
+                        <br>
                     </p>
                     <div id="start" class="flex justify-center">
                         <noscript class="bg-red text-white p-2 m-2">Javascript muss aktiviert sein, damit der
@@ -73,7 +74,7 @@
                             kontaktiere bitte oeffentlichkeit@asta.tu-darmstadt.de.</p>
                     </div>
 
-                    <div id="studiomat" class="prose mx-auto hidden">
+                    <div id="studiomat" class="prose prose-lg mx-auto hidden">
                         <div id="pagination" class="flex h-8 font-medium text-gray-700">
                             <div
                                 class="w-full flex justify-center items-center hover:bg-gray-200 cursor-pointer leading-5 transition duration-150 ease-in border-t-2 border-transparent">
@@ -103,11 +104,11 @@
                             </div>
                         </div>
                         <div class="mb-4">
-                            <h2 id="thesis-number">
+                            <h3 id="thesis-number"></h3>
 
-                            </h2>
-                            <p id="thesis-text">Deine These hier</p>
-                            <p id="thesis-more" class="text-xs italic">Lorem ipsum dolor sit amet, consetetur sadipscing
+                            <p id="thesis-text" class="text-2xl">Deine These hier</p>
+                            <p id="thesis-more" class="text-lg italic">Lorem ipsum dolor sit amet, consetetur
+                                sadipscing
                                 elitr, sed diam
                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                                 voluptua. At
@@ -118,6 +119,13 @@
                                 erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
                                 clita
                                 kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                            <p>
+                                <br>
+
+                            </p>
+
+
                         </div>
 
                         <div class="flex justify-center mb-4">
@@ -138,7 +146,7 @@
                         </div>
                     </div>
 
-                    <div id="results" class="hidden prose mx-auto">
+                    <div id="results" class="hidden prose prose-lg mx-auto">
                         <h2>Ergebnisse</h2>
                         <h4>Zusammenfassung</h4>
                         <div id="result-summary" class="flex flex-col">
@@ -164,7 +172,7 @@
                                     </span>
                                     <span class="text-xs">These1</span>
                                     <div class="flex flex-row flex-wrap">
-                                        <span class="bg-red rounded p-1 text-white text-sm m-1">Deine Wahl</span>
+                                        <span class="bg-red rounded p-1 text-white text-sm leading-none m-1">Deine Wahl</span>
                                         <span class="m-1">|</span>
                                         <span class="bg-green rounded p-1 text-white text-sm m-1">CampusGrün</span>
                                         <span
@@ -194,34 +202,43 @@
                         </div>
                     </div>
 
-                    <div id="faq">
-                        <h2>FAQ</h2>
+                    <div id="faq" class="prose prose-lg">
+                        <h2><br><br>FAQ</h2>
                         <h3>Wer hat die Thesen erarbeitet?</h3>
-                        <p>Die Thesen wurden innerhalb des AStAs erarbeitet. Dabei wurde jedes Referat gefragt und sollte 1-2 Fragen beitragen.</p>
+                        <p>Die Thesen wurden innerhalb des AStAs erarbeitet. Dabei wurde jedes Referat gefragt und
+                            sollte 1-2 Fragen beitragen.</p>
 
                         <h3>Woher stammen die Positionen der Gruppen?</h3>
                         <p>
                             Alle zur Wahl stehenden Gruppen erhielten von uns eine Mail am 3. Mai 2021.
-                            Darin haben wir um eine Positionierung (Zustimmung/Neutral/Ablehnung/Keine Stellungnahme) und eine kurze Begründung derer gebeten.
-                            Alle Stellungsnahmen sind von den Gruppen selbst formuliert und ungeändert hier veröffentlicht.
+                            Darin haben wir um eine Positionierung (Zustimmung/Neutral/Ablehnung/Keine Stellungnahme)
+                            und eine kurze Begründung derer gebeten.
+                            Alle Stellungsnahmen sind von den Gruppen selbst formuliert und ungeändert hier
+                            veröffentlicht.
                         </p>
 
                         <h3>Wie werden die Punkte berechnet?</h3>
                         <p>
                             Deine Antworten werden mit den vorgegebenen Antworten der Gruppen abgeglichen.
-                            <ul class="font-serif">
-                                <li>Stimmt die Antwort überein, werden der Gruppe 2 Punkte gutgeschrieben;</li>
-                                <li>Weicht die Antwort leicht ab (Zustimmung/Neutral oder Neutral/Ablehnung), wird der Gruppe 1 Punkt gutgeschrieben;</li>
-                                <li>Sind die Antworten entgegengesetzt oder hat eine Gruppe eine These nicht beantwortet, gibt es keine Punkte für die Gruppe.</li>
-                            </ul>
+                        <ul class="font-serif">
+                            <li>Stimmt die Antwort überein, werden der Gruppe 2 Punkte gutgeschrieben;</li>
+                            <li>Weicht die Antwort leicht ab (Zustimmung/Neutral oder Neutral/Ablehnung), wird der
+                                Gruppe 1 Punkt gutgeschrieben;</li>
+                            <li>Sind die Antworten entgegengesetzt oder hat eine Gruppe eine These nicht beantwortet,
+                                gibt es keine Punkte für die Gruppe.</li>
+                        </ul>
                         <p>
-                            Eine These, die du übersprungen hast, wird nicht gewertet. Die erreichbare Höchstpunktzahl wird dadurch geringer.
+                            Eine These, die du übersprungen hast, wird nicht gewertet. Die erreichbare Höchstpunktzahl
+                            wird dadurch geringer.
 
-                            Eine These, die doppelt gewichtet werden soll, wird doppelt gewichtet, das heißt, für sie wird die doppelte Punktzahl gutgeschrieben (0/2/4). Dadurch können insgesamt mehr Punkte erreicht werden.
+                            Eine These, die doppelt gewichtet werden soll, wird doppelt gewichtet, das heißt, für sie
+                            wird die doppelte Punktzahl gutgeschrieben (0/2/4). Dadurch können insgesamt mehr Punkte
+                            erreicht werden.
                         </p>
 
                         <h3>Werden meine Antworten gespeichert?</h3>
-                        <p>Nein. Alles läuft auf deinem Browser lokal. Der Server weiß nicht welche Antworten du gegeben hast.</p>
+                        <p>Nein. Alles läuft auf deinem Browser lokal. Der Server weiß nicht welche Antworten du gegeben
+                            hast.</p>
 
                         <h3>Fehler gefunden?</h3>
                         <p>Geb uns gerne Bescheid unter oeffentlichkeit@asta.tu-darmstadt.de!</p>
@@ -232,7 +249,7 @@
     </div>
 
     <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank" rel="noreferrer"
-        class="underline text-gray-400 text-xs fixed right-0 bottom-0">Impressum</a>
+    class="imprint">Impressum</a>
 </body>
 
 </html>

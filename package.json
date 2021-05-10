@@ -11,12 +11,15 @@
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss-custom-properties": "^11.0.0"
+  },
   "scripts": {
     "prod": "NODE_ENV=production npm run build",
-    "build": "npm run build:tw && npm run build:css",
+    "build": "npm run build:tw && npm run build:css && npm run build:orga",
     "build:tw": "tailwind build tailwind.config.css -c tailwind.config.js -o src/css/tailwind.css",
-    "build:css": "postcss tailwind.config.css -o src/css/tailwind.min.css"
+    "build:css": "postcss src/css/tailwind.css -o src/css/tailwind.min.css",
+    "build:orga": "postcss src/css/organigramm.css -o src/css/organigramm.min.css"
   },
   "author": "",
   "license": "ISC"

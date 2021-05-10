@@ -2,8 +2,6 @@
 <html lang="de">
 
 <head>
-    <title>Was steht zur Wahl?</title>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.min.css" rel="stylesheet">
@@ -22,21 +20,20 @@
 
 <body class="bg-gray-200">
     <div class="container mx-auto resp-pad">
-        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad">
+        <nav id="navbar" class="flex flex-col sm:flex-row justify-center items-center resp-pad-b resp-pad-x">
             <div class="mb-4 mr-2 sm:mr-4 md:mr-8 lg:mr-8 xl:mr-8">
                 <a href="/">
-                    <img class="h-28 md:h-32 lg:h-40 xl:h-48 filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl"
-                        src="/img/logo.svg">
+                    <img class="logo" src="/img/logo.svg">
                 </a>
             </div>
-            <div class="w-full flex flex-row flex-wrap justify-around text-purple">
-                <a href="/was" class="bg-purple-hover nav-square">
+            <div class="w-full flex flex-row flex-wrap justify-between">
+                <a href="/was" class="nav-square nav-m-r bg-selected">
                     <img src="/img/was.svg" alt="Was wird gewählt?">
                 </a>
-                <a href="/wer" class="bg-white nav-square">
+                <a href="/wer" class="nav-square nav-m-x">
                     <img src="/img/wer.svg" alt="Wer steht zur Wahl?">
                 </a>
-                <a href="/studiomat" class="bg-white nav-square">
+                <a href="/studiomat" class="nav-square nav-m-l">
                     <img src="/img/studi.svg" alt="Studi-o-mat">
                 </a>
                 <a href="#" class="nav-filler">
@@ -46,18 +43,21 @@
         </nav>
         <main class="bg-white border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl">
             <div class="container mx-auto resp-pad">
-                <article class="prose mx-auto">
-                    <h1>Was wird gewählt?</h1>
+                <article class="prose prose-lg mx-auto">
+                    <h1>
+
+                        Was wird gewählt?</h1>
                     <p>
                         Im Folgenden findest du eine Übersicht der zur Wahl stehenden Gremien sowie die von ihnen
                         ernannten
                         Gremien.
                         Im Organigram kannst du einfach auf die Gremien mit einem Pfeil <span
-                            class="text-purple">&#8227</span>
+                            class=" text-purple text-lg">&#8227</span>
                         klicken. Dann öffnet sich eine Kurzübersicht über das Gremium. Dort ist auch eine ausführliche
                         Beschreibung
                         verlinkt. Du kannst auch das Organigram überspringen und direkt zu den ausführlichen Texten
                         gehen.
+                        <br> <br>
                     </p>
                 </article>
             </div>
@@ -73,10 +73,12 @@
                                     <details>
                                         <summary class="text-lg">FSR</summary>
                                         <p>
-                                            3-9 Studierende. Die Anzahl der Mitglieder ist abhangig von der Größe des
+                                            3-9 Studis. Die Anzahl der Mitglieder ist abhangig von der Größe des
                                             Fachbereichs.
                                             <br>
-                                            Ist der durch eine Wahl legitimierte Teil der aktiven Fachschaft.
+                                            Der FSR ist der durch eine Wahl legitimierte Teil der aktiven Fachschaft.
+                                            <br>
+                                            <a class="underline" href="#fsr">Mehr Infos</a>
                                         </p>
                                     </details>
                                 </div>
@@ -93,6 +95,8 @@
                                             besprochen und entscheidet über die Position des Fachbereichs in zentralen
                                             Angelegenheiten.
                                             Außerdem bennent der FBR alle Auschüsse innerhalb des Fachbereichs.
+                                            <br>
+                                            <a class="underline" href="#fbr">Mehr Infos</a>
                                         </p>
                                     </details>
                                 </div>
@@ -121,7 +125,12 @@
                                     <details>
                                         <summary class="text-lg">StuPa</summary>
                                         <p>
-                                            Besteht aus 31 Studierenden.
+                                            Besteht aus 31 Studis und bildet das höchste Gremium der Studierendenschaft.
+                                            <br>
+                                            Entscheidet unter anderem über den Haushalt und größere Finanzanträge, also
+                                            wofür die 12,15€ des Semesterbeitrags ausgegeben werden.
+                                            <br>
+                                            <a class="underline" href="#stupa">Mehr Infos</a>
                                         </p>
                                     </details>
                                 </div>
@@ -131,7 +140,13 @@
                                             <details>
                                                 <summary>AStA</summary>
                                                 <p>
-                                                    AStA
+                                                    Gewählt vom StuPa sind 3-7 Studis. Diese haben Verantwortung für
+                                                    Finanzen und Personal und sind grob gesagt die Exekutive des StuPas.
+                                                    Zusätzlich sind ~25 Studis von den gewählten Referent:innen berufen.
+                                                    <br>
+                                                    Vertritt die Interessen der Studis gegenüber der Uni und dem Land.
+                                                    <br>
+                                                    <a class="underline" href="#asta">Mehr Infos</a>
                                                 </p>
                                             </details>
                                         </div>
@@ -143,7 +158,12 @@
                                     <details>
                                         <summary class="text-lg">UV</summary>
                                         <p>
-                                            Besteht aus 31 Studierenden.
+                                            Besteht aus 31 Profs, 15 Studis, 10 WiMis und 5 ATMs.
+                                            <br>
+                                            Kümmert sich um Grundsatzfragen der Universität. Tagt nur 1x im Semester.
+                                            Wählt den Senat und das Präsidum
+                                            <br>
+                                            <a class="underline" href="#UV">Mehr Infos</a>
                                         </p>
                                     </details>
                                 </div>
@@ -153,7 +173,12 @@
                                             <details>
                                                 <summary>Senat</summary>
                                                 <p>
-                                                    Besteht aus 31 Studierenden.
+                                                    Besteht aus der Präsidentin, 10 Profs, 4 Studis, 3 WiMis und 3 ATMs.
+                                                    <br>
+                                                    Berät das Präsidium in Struktur, Haushalt, Forschung, Lehre u.v.m.
+                                                    Zahlreiche Aufgaben sind in Unterausschüsse gegliedert.
+                                                    Für uns vor allem interessant, weil die allgemeinen
+                                                    Prüfungsbestimmungen und jede Prüfungsordnung hier beschlossen wird.
                                                     <br>
                                                     <a class="underline" href="#senat">Mehr Infos</a>
                                                 </p>
@@ -165,7 +190,10 @@
                                             <details>
                                                 <summary>Präsidium</summary>
                                                 <p>
-                                                    Besteht aus 31 Studierenden.
+                                                    Besteht aus einer Präsidentin,
+                                                    4 Vize mit eigenem Resort und einem Kanzler.
+                                                    <br>
+                                                    Das Präsidum leitet die Universität.
                                                 </p>
                                             </details>
                                         </div>
@@ -178,9 +206,9 @@
             </figure>
 
             <div class="container mx-auto resp-pad">
-                <article class="prose mx-auto">
-                    <h2 id="senat">Senat</h2>
-                    <h4>Aufgaben</h4>
+                <article class="prose prose-lg mx-auto">
+                    <h2 id="senat"> <br> Senat</h2>
+                    <h3>Aufgaben</h3>
                     <p>
                         Grundsatzfragen von Struktur,
                         Entwicklungs- und Bauplanung,
@@ -210,7 +238,7 @@
                         vom Präsidium vorgeschlagenen
                         Mitglieder des Hochschulrates.
                     </p>
-                    <h4>Zusammensetzung</h4>
+                    <h3>Zusammensetzung</h3>
                     <p>
                         Der Senat der TU Darmstadt gehören
                         der/die Präsident:in als Vorsitzende:r,
@@ -229,9 +257,9 @@
                         beratender Stimme an.
                     </p>
                 </article>
-                <article class="prose mx-auto mt-8">
+                <article class="prose prose-lg mx-auto mt-8">
                     <h2 id="uv">Universitätsversammlung</h2>
-                    <h4>Aufgaben</h4>
+                    <h3>Aufgaben</h3>
                     <p>
                         Die Universitätsversammlung der TU
                         Darmstadt behandelt Angelegenheiten,
@@ -243,7 +271,7 @@
                         in ihr die vier Senatsvertreter:innen der
                         Studierenden gewählt.
                     </p>
-                    <h4>Zusammensetzung</h4>
+                    <h3>Zusammensetzung</h3>
                     <p>
                         Die Universitätsversammlung hat 61
                         stimmberechtigte Mitglieder: 31
@@ -253,9 +281,9 @@
                         Mitarbeiter:innen.
                     </p>
                 </article>
-                <article class="prose mx-auto mt-8">
+                <article class="prose prose-lg mx-auto mt-8">
                     <h2 class="fbr">Fachbereichsrat</h2>
-                    <h4>Aufgaben</h4>
+                    <h3>Aufgaben</h3>
                     <p>
                         Er wählt alle zwei Jahre den/die
                         Dekan:in und eine:n oder mehrere
@@ -270,7 +298,7 @@
                         nächsten x Jahren erreichen möchte)
                         beschlossen.
                     </p>
-                    <h4>Zusammensetzung</h4>
+                    <h3>Zusammensetzung</h3>
                     <p>
                         Der Fachbereichsrat setzt sich aus allen
                         Interessensgruppen eines Fachbereiches
@@ -286,8 +314,8 @@
                         daher nach der Anzahl der Professor:innen.
                     </p>
                 </article>
-                <article class="prose mx-auto mt-8">
-                    <h2 class="fbr">Studierendenparlament</h2>
+                <article class="prose prose-lg mx-auto mt-8">
+                    <h2 class="stupa">Studierendenparlament</h2>
                     <p>
                         Das Studierendenparlament ist das
                         höchste Gremium der Studierendenschaft. Jedes Jahr im Sommer wählen
@@ -327,7 +355,7 @@
                         werden über die AStA Homepage und
                         durch Aushänge bekannt gegeben.
                     </p>
-                    <h4>Zusammensetzung seit SoSe 2019</h4>
+                    <h3>Zusammensetzung seit SoSe 2019</h3>
                     <p>
                     <ul>
                         <li>Campusgrüne: 12 Sitze</li>
@@ -339,9 +367,9 @@
                     </ul>
                     </p>
                 </article>
-                <article class="prose mx-auto mt-8">
-                    <h2 class="fbr">AStA</h2>
-                    <h4>Aufgaben</h4>
+                <article class="prose prose-lg mx-auto mt-8">
+                    <h2 class="asta">AStA</h2>
+                    <h3>Aufgaben</h3>
                     <p>
                         Der Allgemeine Studierendenausschuss
                         (AStA) wird vom Studierendenparlament gewählt und ist der direkte
@@ -406,13 +434,13 @@
                         Sommersemester 2021 beträgt dieser
                         Beitrag 12,15€.
                     </p>
-                    <h4>Zusammensetzung seit SoSe 2019</h4>
+                    <h3>Zusammensetzung seit SoSe 2019</h3>
                     <p>
                         6 gewählte Referent:innen, 27 berufene Referent:innen
                     </p>
                 </article>
-                <article class="prose mx-auto mt-8">
-                    <h2 class="fbr">Fachschaftsrat</h2>
+                <article class="prose prose-lg mx-auto mt-8">
+                    <h2 class="fsr">Fachschaftsrat</h2>
                     <p>
                         Als Studierende:r gehörst du zu der
                         Fachschaft deines Fachbereichs, denn
@@ -437,7 +465,7 @@
     </div>
 
     <a href="https://www.asta.tu-darmstadt.de/de/impressum" target="_blank" rel="noreferrer"
-        class="underline text-gray-400 text-xs fixed right-0 bottom-0">Impressum</a>
+        class="imprint">Impressum</a>
 </body>
 
 </html>

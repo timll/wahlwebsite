@@ -7,19 +7,17 @@
         url("/fonts/meerainimai-regular.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
   }
 
-  @font-face {
-    font-family: 'Amiri Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Amiri Regular'), url('/fonts/Amiri-Regular.woff') format('woff');
-    font-display: swap;
+@font-face {
+  font-family: 'Amiri Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Amiri Regular'), url('/fonts/Amiri-Regular.woff') format('woff');
   }
   
 
-  @font-face {
+  /* @font-face {
   font-family: 'Amiri Italic';
   font-style: normal;
   font-weight: normal;
@@ -40,7 +38,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Amiri Bold Italic'), url('/fonts/Amiri-BoldItalic.woff') format('woff');
-  }
+  } */
 
  /**
   * This injects any component classes registered by plugins.
@@ -112,16 +110,49 @@
       .flex-basis-auto {
         flex-basis: auto;
       }
+      .leading-inherit {
+        line-height: inherit;
+      }
+      .prose {
+        max-width: 80ch;
+      }
     }
+  }
+
+  html {
+    hyphens: auto;
   }
 
   p {
     @apply font-serif;
   }
 
-  .nav-square {
-    @apply h-20 sm:h-24 md:h-24 lg:h-28 xl:h-28 mx-2 sm:mx-2 md:mx-4 lg:mx-4 xl:mx-4 mb-1 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4 border-2 border-purple shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl hover:bg-purple-hover;
+  .resp-shadows {
+    @apply shadow sm:shadow-lg md:shadow-lg lg:shadow-xl xl:shadow-xl;
   }
+
+  .nav-square {
+    @apply h-20 sm:h-24 md:h-24 lg:h-28 xl:h-28;
+    @apply mb-2 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-4;
+    @apply flex-1 lg:flex-initial xl:flex-initial flex justify-center;
+    @apply border-2 border-purple;
+    @apply bg-white hover:bg-purple-hover;
+    @apply resp-shadows;
+  }
+  .bg-selected {
+    @apply bg-purple-hover;
+  }
+
+  .nav-m-x {
+    @apply mx-2 sm:mx-2 md:mx-4 lg:mx-4 xl:mx-4;
+  }
+  .nav-m-l {
+    @apply ml-2 sm:ml-2 md:ml-4 lg:ml-4 xl:ml-4;
+  }
+  .nav-m-r {
+    @apply mr-2 sm:mr-2 md:mr-4 lg:mr-4 xl:mr-4;
+  }
+
   .nav-square > img {
     @apply h-full p-1;
   }
@@ -145,7 +176,36 @@
   .resp-pad-t {
     @apply pt-6 sm:pt-6 md:pt-8 lg:pt-8 xl:pt-8;
   }
-  
+  .resp-pad-b {
+    @apply pb-6 sm:pb-6 md:pb-8 lg:pb-8 xl:pb-8;
+  }
   .resp-mar-b {
     @apply mb-6 sm:mb-6 md:mb-8 lg:mb-8 xl:mb-8;
+  }
+
+  .list-img {
+    @apply w-28 h-28 sm:w-32 sm:h-32 md:h-40 md:w-40 lg:h-40 lg:w-40 xl:h-40 xl:w-40;
+    @apply resp-shadows;
+    @apply flex items-center justify-center border-2 border-purple;
+    @apply m-4 sm:mx-4 md:mx-4 lg:m-8 xl:m-8;
+    @apply bg-white hover:bg-purple-hover;
+  }
+
+  .prose > h1, 
+  .prose > h2, 
+  .prose > h3, 
+  .prose > h4, 
+  .prose > h5, 
+  .prose > h6 {
+    @apply font-normal;
+  }
+
+  .logo {
+    @apply h-28 sm:h-36 md:h-40 lg:h-40 xl:h-48;
+    @apply filter drop-shadow sm:drop-shadow-lg md:drop-shadow-lg lg:drop-shadow-xl xl:drop-shadow-xl;
+  }
+
+  .imprint {
+    writing-mode: vertical-lr;
+    @apply text-gray-400 text-xs fixed right-0 bottom-1;
   }
