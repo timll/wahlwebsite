@@ -288,7 +288,7 @@ function initResults() {
 
 function statementOrDefault(statement) {
     if (statement == "")
-        return '<span class="italic text-sm">Die Liste hat keine Stellungnahme abgegeben.</span>';
+        return '<span class="italic text-sm">Die Liste hat keine ausführliche Stellungnahme abgegeben.</span>';
     return '<span class="text-sm">'+statement+'</span>';
 }
 
