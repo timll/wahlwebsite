@@ -86,7 +86,7 @@
 			"name_x": "FACHWERK"
 		},
 		"2": {
-			"name": "Jusos",
+			"name": "Jusos & Unabhängige",
 			"name_x": "Jusos"
 		},
 		"3": {
@@ -94,75 +94,79 @@
 			"name_x": "LHG"
 		},
 		"4": {
-			"name": "Ring",
-			"name_x": "RCDS"
+			"name": "Linke Liste - SDS*",
+			"name_x": "SDS"
 		},
 		"5": {
-			"name": "Linke Liste - SDS",
-			"name_x": "SDS"
+			"name": "RCDS - Die Studentenunion",
+			"name_x": "RCDS"
+		},
+		"6": {
+			"name": "Die Partei Hochschulgruppe",
+			"name_x": "PARTEI"
 		}
 	},
 	"answers": {
 		"0": {
 			"0": {
 				"selection": 0,
-				"statement": "Juche!"
+				"statement": "Mit einem breiten Angebot werden alle Studierenden in ihren Essgewohnheiten angesprochen, ohne dass auf das Angebot von Fleichgerichten verzichtet werden muss. Vegetarische und vegane Gerichte sind meistens günstiger und gleichzeitig klimafreundlicher."
 			},
 			"1": {
 				"selection": 0,
-				"statement": "Noe."
+				"statement": "Die Universität ist selbst ein Teil der breiteren Öffentlichkeit und damit Akteur und Gegenstand gesamtgesellschaftlicher Diskussionen, auch wenn sie das nicht immer anerkennen will. Für den AStA als Studierendenvertretung kann daher nur das gleiche gelten."
 			},
 			"2": {
-				"selection": 2,
-				"statement": ""
+				"selection": 1,
+				"statement": "Einer der Vorteile der verschiedenen Möglichkeiten geschlechtergerechter Sprache ist gerade ihre Uneinheitlichkeit, die unterschiedliche Zugangsweisen sowie Anwendungsbereiche anerkennen kann, statt undifferenzierte Sprachregeln vorzuschreiben."
 			},
 			"3": {
-				"selection": 1,
-				"statement": ""
+				"selection": 0,
+				"statement": "Wie in den allermeisten gesellschaftlichen Teilbereichen leidet auch die Universität an den Resultaten historischer Ungerechtigkeiten in Bezug auf die Vertretung von Frauen. Eine Quote ist ein zwar nicht umfassendes, aber zweckmäßiges Werkzeug dafür, einen Zustand echter Chancengleichheit herzustellen."
 			},
 			"4": {
 				"selection": 0,
-				"statement": ""
+				"statement": "HiWis leisten in allen Bereich der Universität notwendige Arbeit, ohne die der alltägliche Universitätsbetrieb nicht aufrechterhalten werden kann. Ein Mindestlohn von 12€ ist entsprechend ein erster Schritt zur Verbesserung ihrer Stellung an der Universität sowie zur Anerkennung ihrer Arbeitsleistung."
 			},
 			"5": {
-				"selection": 2,
-				"statement": ""
+				"selection": 0,
+				"statement": "Das Hinzufügen von Unisex-Toiletten als einer dritten Option erlaubt eine breitere Auswahl des Hygieneangebots. Die beiden anderen Optionen dürfen dabei nicht wegfallen, weil sonst die Wahlfreiheit eingeschränkt würde."
 			},
 			"6": {
-				"selection": 1,
-				"statement": ""
+				"selection": 0,
+				"statement": "Campusgrün setzt sich kontinuierlich für das Weiterbestehen erprobter und unabhängiger studentischer Projekte ein. Diese bieten eine Alternative bzw. Ergänzung zum Angebot des Vorlesungsverzeichnisses, die von Studierenden für Studierende organisiert wird. Dadurch können Themen zur Sprache kommen, die in Universitätsveranstaltungen zu wenig Beachtung finden."
 			},
 			"7": {
-				"selection": 1,
-				"statement": ""
+				"selection": 2,
+				"statement": "Wenngleich wir Forderungen für den allgemeinen Zugang zu hygienischen Produkten des alltäglichen Bedarfs gesellschaftlich unterstützen, ist der AStA in diesem Fall die falsche Institution zur Bereitstellung der Produkte. Der Zugang zu Hygieneprodukten müsste vielmehr unabhängig vom Studierendenstatus durch staatliche Maßnahmen gewährleistet werden."
 			},
 			"8": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Vonseiten der Studierenden gibt es keinen vernünftigen Grund, warum ein Bestehen einer Leistung nach dem dritten Versuch sich von einem Bestehen bei einem fünften Versuch wesentlich unterscheiden sollte; auch deswegen, weil das Nicht-Bestehen unterschiedlichste Gründe haben kann, die durch das bisherige Verfahren nicht erfasst werden können."
 			},
 			"9": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Es gibt keinen Grund, warum eine Technische Universität nicht, neben den üblichen kommerziellen Anbietern, eigene Kommunikationstechniken bzw. Programme anbieten sollte, wenn diese Universität sich zum Datenschutz bekennt."
 			},
 			"10": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Die Universität verstrickt sich mit Sponsoring aus der Privatwirtschaft in kommerzielle Zwänge, die ihr die freie Ausübung ihrer nicht-kommerziellen Aufgaben erheblich erschwert. Bei Sponsoring besteht die Gefahr der Einschränkung akademischer Unabhängigkeit."
 			},
 			"11": {
-				"selection": 0,
-				"statement": ""
+				"selection": 2,
+				"statement": "Wir sehen keinen Interessenskonflikt und halten die aktuelle Struktur für demokratischer und effektiver als den Gegenvorschlag. Da es in vergleichbaren Institutionen der staatlichen Politik (Parlament & Regierung) keiner solchen strikten Trennung bedarf, ist es zudem nicht ersichtlich, warum gerade die Studierendenschaft diese einführen sollte."
 			},
 			"12": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Zum studentischen Leben gehört eine möglichst freie Mobilität, die sich u.a. in der Reichweite des Semestertickets ausdrückt. Campusgrün setzt sich darüber hinaus für einen freien Zugang zu kulturellen Angeboten durch ein erweitertes Kulturticket ein."
 			},
 			"13": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Diskriminierung kann kein AStA tolerieren, dem die Freiheit und Sicherheit aller eine selbstverständliche Forderung ist."
 			},
 			"14": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Das faktische Vorhandensein dieser Beeinträchtigungen macht es nötig, sie als Faktoren zu berücksichtigen und möglichst umfassend auszugleichen."
 			}
 		},
 		"1": {
@@ -230,63 +234,63 @@
 		"2": {
 			"0": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Aus ökologischer Sicht halten wir es für angemessen, den Anteil an vegetarischen und veganen Gerichten zu erhöhen, um die Attraktivität von fleischlosen Gerichten zu fördern."
 			},
 			"1": {
-				"selection": 2,
-				"statement": ""
+				"selection": 0,
+				"statement": "Als Teil der Gesellschaft muss der AStA sich zu allen Fragen äußern dürfen. Darüber hinaus hat sich gezeigt, dass die Trennung von hochschul- und allgemeinpolitischen Themen in der Praxis nicht möglich ist."
 			},
 			"2": {
-				"selection": 2,
-				"statement": ""
+				"selection": 0,
+				"statement": "Sprache schafft Wirklichkeit. Wir verstehen uns als feministische Gruppe und sind der festen Überzeugung, dass durch Gendern Inklusion betrieben und Geschlechterdiskriminierung reduziert wird."
 			},
 			"3": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Eine diskriminierungsfreie Gesellschaft ist unsere Vision. Ein Anfang wäre durch verbindliche Quoten getan."
 			},
 			"4": {
-				"selection": 3,
-				"statement": ""
+				"selection": 0,
+				"statement": "Studentische Hilfskräfte sind für die Lehre und Forschung eine wichtige Stütze. Dementsprechend müssen sie fair entlohnt werden, um ihre Arbeit angemessen zu würdigen."
 			},
 			"5": {
-				"selection": 2,
-				"statement": ""
+				"selection": 0,
+				"statement": "Alle Gebäude sind groß genug, um mindestens eine Unisex Toilette anzubieten."
 			},
 			"6": {
-				"selection": 2,
-				"statement": ""
+				"selection": 0,
+				"statement": "Laut Hessischem Hochschulgesetz gehört gerade die kulturelle und politische Bildung zu den Kernaufgaben der Studierendenschaft. Diesem Anspruch kommen wir gerne nach."
 			},
 			"7": {
-				"selection": 0,
-				"statement": ""
+				"selection": 1,
+				"statement": "Die kostenfreie Bereitstellung von Monatshygieneprodukten ist auf jeden Fall wünschenswert, aber in den jetzigen Strukturen nicht vom AStA stemmbar. Wir fordern, dass die Uni, in ihrer Funktion als Hausherrin, kostenfreie Monatshygieneprodukte zur Verfügung stellt."
 			},
 			"8": {
 				"selection": 0,
-				"statement": ""
+				"statement": "In unserem Streiten um bessere Studienbedingungen spielte diese Forderung schon immer eine große Rolle."
 			},
 			"9": {
-				"selection": 0,
-				"statement": ""
+				"selection": 1,
+				"statement": "Wir verurteilen die Verwendung von Proctorio, finden jedoch, dass Zoom, trotz aller Bedenken beim Datenschutz, bisher die besten Ergebnisse erzielen konnte. Bis es eine bessere Alternative gibt, soll deswegen Zoom weiterverwendet werden."
 			},
 			"10": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Als staatliche Einrichtung darf die Uni nicht zu Werbezwecken missbraucht werden. Bei einer besseren Finanzierung der Universität wäre das auch gar nicht notwendig."
 			},
 			"11": {
-				"selection": 0,
-				"statement": ""
+				"selection": 2,
+				"statement": "Aus der bisherigen Praxis haben sich für uns keine gewichtigen Gründe für eine strikte Trennung ergeben. Die Ausübung des Mandats im Studierendenparlament steht der konstruktiven Arbeit im AStA-Vorstand nicht entgegen."
 			},
 			"12": {
-				"selection": 0,
-				"statement": ""
+				"selection": 1,
+				"statement": "Erweiterungen des Semestertickets sind immer für Teile der Studierendenschaft von Vorteil, hier ist jedoch abzuwägen zwischen Nutzen und Kosten für alle. Erweiterungen sollte es nur nach Urabstimmung geben."
 			},
 			"13": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Art. 1 GG!"
 			},
 			"14": {
 				"selection": 0,
-				"statement": ""
+				"statement": "Studierenden, die z.B. durch die Pflege eines Familienmitglieds ohnehin einer Mehrbelastung ausgesetzt sind, sollte durch ein Entgegenkommen der Universität Flexibilität in ihrem Studium ermöglicht werden."
 			}
 		},
 		"3": {
@@ -460,6 +464,68 @@
 			},
 			"11": {
 				"selection": 0,
+				"statement": ""
+			},
+			"12": {
+				"selection": 0,
+				"statement": ""
+			},
+			"13": {
+				"selection": 0,
+				"statement": ""
+			},
+			"14": {
+				"selection": 0,
+				"statement": ""
+			}
+		},
+		"6": {
+			"0": {
+				"selection": 0,
+				"statement": ""
+			},
+			"1": {
+				"selection": 0,
+				"statement": ""
+			},
+			"2": {
+				"selection": 0,
+				"statement": ""
+			},
+			"3": {
+				"selection": 0,
+				"statement": ""
+			},
+			"4": {
+				"selection": 0,
+				"statement": ""
+			},
+			"5": {
+				"selection": 1,
+				"statement": "Vorhandene Toiletten einfach als Unisex-Toiletten ausweisen!"
+			},
+			"6": {
+				"selection": 0,
+				"statement": ""
+			},
+			"7": {
+				"selection": 0,
+				"statement": "aber dann bitte richtig! Alles für alle! + Duschen für die Fahrrad Yuppies!"
+			},
+			"8": {
+				"selection": 0,
+				"statement": ""
+			},
+			"9": {
+				"selection": 0,
+				"statement": ""
+			},
+			"10": {
+				"selection": 1,
+				"statement": "aber nur mit geilen Unternehmen! (Siehe unser sehr gutes Wahlprogramm Punkt 1,6,7)"
+			},
+			"11": {
+				"selection": 1,
 				"statement": ""
 			},
 			"12": {
