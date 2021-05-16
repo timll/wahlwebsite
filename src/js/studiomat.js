@@ -266,7 +266,7 @@ function calculateMaxPoints(self) {
 function calculatePairPoints(self, list) {
     points = 0;
     // Same opinion
-    if (self[0] == list)
+    if (self[0] == list && !(self[0] == answer.skip || self[0] == answer.empty))
         points = 2;
     // List is neutral and user made an answer
     else if (list == answer.neutral && (answer.yes == self[0] || self[0] == answer.no))
