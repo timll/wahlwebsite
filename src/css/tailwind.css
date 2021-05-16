@@ -1390,6 +1390,10 @@ video {
   font-weight: 600;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -1652,10 +1656,6 @@ video {
 
 .w-40 {
   width: 10rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-1\/2 {
