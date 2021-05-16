@@ -244,7 +244,7 @@ function addResultDetail(thesis_id) {
                     <div class="flex flex-col pt-4 pl-4">`
     for (list_id in data.lists) {
         html += '<span class="py-2">'
-        html += getSelectionMarker(data.lists[list_id].name_x, data.answers[list_id][thesis_id].selection)
+        html += getSelectionMarker(data.lists[list_id].name, data.answers[list_id][thesis_id].selection)
         html += statementOrDefault(data.answers[list_id][thesis_id].statement)
         html += '</span>'
     }
