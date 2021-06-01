@@ -182,6 +182,9 @@
   .resp-mar-b {
     @apply mb-6 sm:mb-6 md:mb-8 lg:mb-8 xl:mb-8;
   }
+  .resp-mar-t {
+    @apply mt-6 sm:mt-6 md:mt-8 lg:mt-8 xl:mt-8;
+  }
 
   .list-img {
     @apply w-28 h-28 sm:w-32 sm:h-32 md:h-40 md:w-40 lg:h-40 lg:w-40 xl:h-40 xl:w-40;

@@ -2316,6 +2316,34 @@ p {
   }
 }
 
+.resp-mar-t {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .resp-mar-t {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .resp-mar-t {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .resp-mar-t {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .resp-mar-t {
+    margin-top: 2rem;
+  }
+}
+
 .list-img {
   height: 7rem;
   width: 7rem;
